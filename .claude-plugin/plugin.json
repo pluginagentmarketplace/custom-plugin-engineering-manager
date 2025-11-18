@@ -1,0 +1,127 @@
+{
+  "name": "Developer Roadmap Learning System",
+  "version": "1.0.0",
+  "description": "Ultra-comprehensive learning system for 69 developer roles with specialized agents, interactive roadmaps, and skill-based learning paths from roadmap.sh",
+  "author": "Claude Code",
+  "repository": "https://github.com/pluginagentmarketplace/developer-roadmap-plugin",
+  "keywords": [
+    "learning",
+    "developer",
+    "roadmap",
+    "career",
+    "skill",
+    "education"
+  ],
+  "agents": [
+    {
+      "name": "frontend-web-agent",
+      "displayName": "Frontend & Web Development",
+      "description": "Specializes in web frontend technologies, frameworks, and UI development"
+    },
+    {
+      "name": "backend-server-agent",
+      "displayName": "Backend & Server Development",
+      "description": "Focuses on backend systems, server-side programming, and API development"
+    },
+    {
+      "name": "cloud-devops-agent",
+      "displayName": "Cloud & DevOps Infrastructure",
+      "description": "Handles cloud platforms, containerization, and infrastructure automation"
+    },
+    {
+      "name": "data-ai-agent",
+      "displayName": "Data & AI Engineering",
+      "description": "Specializes in data engineering, machine learning, and AI systems"
+    },
+    {
+      "name": "architecture-design-agent",
+      "displayName": "Architecture & System Design",
+      "description": "Focuses on system architecture, API design, and design patterns"
+    },
+    {
+      "name": "languages-fundamentals-agent",
+      "displayName": "Languages & Computer Science",
+      "description": "Covers programming languages, CS fundamentals, and foundational concepts"
+    },
+    {
+      "name": "specialized-roles-agent",
+      "displayName": "Specialized Professional Roles",
+      "description": "Handles unique career paths like product management, devrel, and UX design"
+    }
+  ],
+  "commands": [
+    {
+      "name": "learn",
+      "displayName": "Start Learning",
+      "description": "Choose a role and begin your personalized learning journey"
+    },
+    {
+      "name": "browse-role",
+      "displayName": "Browse All Roles",
+      "description": "Explore all 69 available developer roles and roadmaps"
+    },
+    {
+      "name": "assess",
+      "displayName": "Assess Knowledge",
+      "description": "Evaluate your current skills and get personalized recommendations"
+    },
+    {
+      "name": "roadmap",
+      "displayName": "View Roadmap",
+      "description": "Display detailed roadmap for any developer role"
+    }
+  ],
+  "skills": [
+    {
+      "name": "frontend-web",
+      "displayName": "Frontend & Web Skills",
+      "category": "web-development",
+      "description": "HTML, CSS, JavaScript, React, Vue, Angular, and web ecosystem"
+    },
+    {
+      "name": "backend-server",
+      "displayName": "Backend & Server Skills",
+      "category": "server-development",
+      "description": "Node.js, Python, Java, Go, databases, and API design"
+    },
+    {
+      "name": "cloud-devops",
+      "displayName": "Cloud & DevOps Skills",
+      "category": "infrastructure",
+      "description": "AWS, Docker, Kubernetes, terraform, and cloud infrastructure"
+    },
+    {
+      "name": "data-ai",
+      "displayName": "Data & AI Skills",
+      "category": "data-science",
+      "description": "Data engineering, machine learning, AI, and analytics"
+    },
+    {
+      "name": "architecture-design",
+      "displayName": "Architecture & Design Skills",
+      "category": "design",
+      "description": "System design, API design, design patterns, and architecture"
+    },
+    {
+      "name": "languages",
+      "displayName": "Programming Languages",
+      "category": "fundamentals",
+      "description": "Python, JavaScript, Java, Go, Rust, PHP, and other languages"
+    },
+    {
+      "name": "specialized-roles",
+      "displayName": "Specialized Role Skills",
+      "category": "professional",
+      "description": "Product management, DevRel, technical writing, and specialized skills"
+    }
+  ],
+  "hooks": {
+    "enabled": true,
+    "location": "hooks/hooks.json"
+  },
+  "settings": {
+    "autoProgressTracking": true,
+    "learningPathValidation": true,
+    "skillAssessment": true
+  }
+}
