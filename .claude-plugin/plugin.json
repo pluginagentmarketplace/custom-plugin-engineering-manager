@@ -1,118 +1,98 @@
 {
-  "name": "Developer Roadmap Learning System",
+  "name": "Engineering Manager - Professional Leadership Plugin",
   "version": "1.0.0",
-  "description": "Ultra-comprehensive learning system for 69 developer roles with specialized agents, interactive roadmaps, and skill-based learning paths from roadmap.sh",
+  "description": "Comprehensive engineering management toolkit for technical leaders. Build high-performing teams, guide technical strategy, develop talent, and drive organizational excellence.",
   "author": "Claude Code",
-  "repository": "https://github.com/pluginagentmarketplace/developer-roadmap-plugin",
+  "repository": "https://github.com/pluginagentmarketplace/custom-plugin-engineering-manager",
   "keywords": [
-    "learning",
-    "developer",
-    "roadmap",
-    "career",
-    "skill",
-    "education"
+    "engineering-management",
+    "technical-leadership",
+    "team-management",
+    "hiring",
+    "performance",
+    "career-development",
+    "strategy",
+    "culture"
   ],
   "agents": [
     {
-      "name": "frontend-web-agent",
-      "displayName": "Frontend & Web Development",
-      "description": "Specializes in web frontend technologies, frameworks, and UI development"
+      "name": "team-leadership-agent",
+      "displayName": "Team Leadership & People Management",
+      "description": "Expert in building high-performing teams, mentoring, 1-on-1s, delegation, and people development"
     },
     {
-      "name": "backend-server-agent",
-      "displayName": "Backend & Server Development",
-      "description": "Focuses on backend systems, server-side programming, and API development"
+      "name": "technical-strategy-agent",
+      "displayName": "Technical Strategy & Architecture",
+      "description": "Guides technical direction, architecture decisions, technology roadmaps, and technical excellence"
     },
     {
-      "name": "cloud-devops-agent",
-      "displayName": "Cloud & DevOps Infrastructure",
-      "description": "Handles cloud platforms, containerization, and infrastructure automation"
+      "name": "hiring-performance-agent",
+      "displayName": "Hiring, Performance & Metrics",
+      "description": "Specializes in recruitment, performance management, goal-setting, and data-driven decisions"
     },
     {
-      "name": "data-ai-agent",
-      "displayName": "Data & AI Engineering",
-      "description": "Specializes in data engineering, machine learning, and AI systems"
+      "name": "culture-engagement-agent",
+      "displayName": "Culture, Communication & Engagement",
+      "description": "Focuses on team culture, psychological safety, transparent communication, and retention"
     },
     {
-      "name": "architecture-design-agent",
-      "displayName": "Architecture & System Design",
-      "description": "Focuses on system architecture, API design, and design patterns"
-    },
-    {
-      "name": "languages-fundamentals-agent",
-      "displayName": "Languages & Computer Science",
-      "description": "Covers programming languages, CS fundamentals, and foundational concepts"
-    },
-    {
-      "name": "specialized-roles-agent",
-      "displayName": "Specialized Professional Roles",
-      "description": "Handles unique career paths like product management, devrel, and UX design"
+      "name": "growth-development-agent",
+      "displayName": "Career Growth & Development",
+      "description": "Supports career paths, skill development, succession planning, and team advancement"
     }
   ],
   "commands": [
     {
-      "name": "learn",
-      "displayName": "Start Learning",
-      "description": "Choose a role and begin your personalized learning journey"
+      "name": "manage",
+      "displayName": "Management Toolkit",
+      "description": "Access management tools, templates, frameworks, and best practices"
     },
     {
-      "name": "browse-role",
-      "displayName": "Browse All Roles",
-      "description": "Explore all 69 available developer roles and roadmaps"
+      "name": "guide",
+      "displayName": "Get Expert Guidance",
+      "description": "Get advice on specific management challenges and situations"
     },
     {
-      "name": "assess",
-      "displayName": "Assess Knowledge",
-      "description": "Evaluate your current skills and get personalized recommendations"
+      "name": "assess-team",
+      "displayName": "Team Assessment",
+      "description": "Evaluate team health, dynamics, performance, and engagement"
     },
     {
-      "name": "roadmap",
-      "displayName": "View Roadmap",
-      "description": "Display detailed roadmap for any developer role"
+      "name": "strategies",
+      "displayName": "Strategic Planning",
+      "description": "Plan technical strategies, organizational roadmaps, and long-term vision"
     }
   ],
   "skills": [
     {
-      "name": "frontend-web",
-      "displayName": "Frontend & Web Skills",
-      "category": "web-development",
-      "description": "HTML, CSS, JavaScript, React, Vue, Angular, and web ecosystem"
+      "name": "team-dynamics",
+      "displayName": "Team Dynamics & Leadership",
+      "category": "people-management",
+      "description": "Building teams, managing dynamics, leadership principles, and mentorship"
     },
     {
-      "name": "backend-server",
-      "displayName": "Backend & Server Skills",
-      "category": "server-development",
-      "description": "Node.js, Python, Java, Go, databases, and API design"
+      "name": "technical-decision-making",
+      "displayName": "Technical Decision Making",
+      "category": "technical-strategy",
+      "description": "Architecture decisions, tech choices, technical roadmaps, and technical strategy"
     },
     {
-      "name": "cloud-devops",
-      "displayName": "Cloud & DevOps Skills",
-      "category": "infrastructure",
-      "description": "AWS, Docker, Kubernetes, terraform, and cloud infrastructure"
+      "name": "hiring-recruitment",
+      "displayName": "Hiring & Recruitment",
+      "category": "talent",
+      "description": "Recruiting, interviewing, hiring processes, and talent acquisition"
     },
     {
-      "name": "data-ai",
-      "displayName": "Data & AI Skills",
-      "category": "data-science",
-      "description": "Data engineering, machine learning, AI, and analytics"
+      "name": "performance-management",
+      "displayName": "Performance Management",
+      "category": "performance",
+      "description": "Performance reviews, feedback, goal-setting, and metrics"
     },
     {
-      "name": "architecture-design",
-      "displayName": "Architecture & Design Skills",
-      "category": "design",
-      "description": "System design, API design, design patterns, and architecture"
-    },
-    {
-      "name": "languages",
-      "displayName": "Programming Languages",
-      "category": "fundamentals",
-      "description": "Python, JavaScript, Java, Go, Rust, PHP, and other languages"
-    },
-    {
-      "name": "specialized-roles",
-      "displayName": "Specialized Role Skills",
-      "category": "professional",
-      "description": "Product management, DevRel, technical writing, and specialized skills"
+      "name": "culture-engagement",
+      "displayName": "Culture & Engagement",
+      "category": "culture",
+      "description": "Building culture, retention, team engagement, and psychological safety"
     }
   ],
   "hooks": {
@@ -120,8 +100,9 @@
     "location": "hooks/hooks.json"
   },
   "settings": {
-    "autoProgressTracking": true,
-    "learningPathValidation": true,
-    "skillAssessment": true
+    "managementTools": true,
+    "performanceTracking": true,
+    "teamAssessment": true,
+    "strategicPlanning": true
   }
 }

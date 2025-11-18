@@ -1,214 +1,324 @@
-# Developer Roadmap Learning System - Claude Code Plugin
+# Engineering Manager - Professional Leadership Plugin
 
-🚀 **Ultra-comprehensive learning system for 69 developer roles** with 7 specialized agents, interactive roadmaps, and skill-based learning paths.
+🚀 **Comprehensive engineering management toolkit** for technical leaders. Build high-performing teams, guide technical strategy, develop talent, and drive organizational excellence.
 
 ## Overview
 
-Transform your career with structured learning paths based on the legendary [roadmap.sh](https://roadmap.sh) collection. This Claude Code plugin provides:
+Transform your engineering leadership with expert guidance, professional templates, and strategic frameworks. This Claude Code plugin provides:
 
-- **69 Developer Roles** - Complete career paths across all specializations
-- **7 Specialized Agents** - Expert guidance for different career tracks
-- **7 Invokable Skills** - Hands-on learning for each category
-- **4 Slash Commands** - Easy navigation and interaction
-- **1000+ Learning Resources** - Books, courses, projects, documentation
-- **500+ Hands-on Projects** - From beginner to expert level
+- **5 Specialized Agents** - Expert guidance on people, strategy, hiring, culture, and growth
+- **5 Invokable Skills** - Hands-on tools for team dynamics, technical decisions, hiring, performance, and culture
+- **4 Slash Commands** - Management toolkit, expert guidance, team assessment, and strategic planning
+- **100+ Templates & Frameworks** - Ready-to-use for management activities
+- **500+ Best Practices** - From top engineering leaders and industry research
 
 ## Quick Start
 
 ### Installation
 
 ```bash
-# In Claude Code, add this plugin to your project:
-# Option 1: Load from directory
-/plugin-add ./developer-roadmap-plugin
-
-# Option 2: Add to marketplace (coming soon)
-/plugin-add marketplace://developer-roadmap-plugin
+# In Claude Code, add this plugin:
+/plugin-add ./custom-plugin-engineering-manager
 ```
 
-### First Steps
+### First Commands
 
-1. **Explore Available Roles**
+1. **Get Management Tools**
    ```
-   /browse-role
+   /manage
    ```
+   Access templates, frameworks, and best practices
 
-2. **Start Your Learning Journey**
+2. **Get Expert Guidance**
    ```
-   /learn
+   /guide [challenge]
    ```
+   Get advice on specific management situations
 
-3. **Assess Your Knowledge**
+3. **Assess Your Team**
    ```
-   /assess
+   /assess-team
    ```
+   Evaluate team health and get recommendations
 
-4. **View Detailed Roadmap**
+4. **Plan Strategy**
    ```
-   /roadmap [role-name]
+   /strategies [period]
    ```
+   Create technical and organizational strategies
 
 ## Features
 
-### 7 Specialized Agents
+### 5 Specialized Agents
 
-Each agent is an expert in its domain:
+Each agent is an expert in engineering management:
 
-1. **🎨 Frontend & Web Development**
-   - 12 roles including React, Vue, Angular specialists
-   - Web performance, testing, UX design
+1. **👥 Team Leadership & People Management**
+   - Building high-performing teams
+   - 1-on-1 meetings and mentoring
+   - Delegation and empowerment
+   - Conflict resolution
+   - Psychological safety
 
-2. **🖥️ Backend & Server Development**
-   - 15+ roles across Python, Java, Go, Node.js, PHP, Rust
-   - APIs, databases, microservices
+2. **🏗️ Technical Strategy & Architecture**
+   - Technical decision-making
+   - Architecture selection
+   - Technology roadmaps
+   - Technical debt management
+   - System design guidance
 
-3. **☁️ Cloud & DevOps Infrastructure**
-   - 10+ roles from Docker to Kubernetes to AWS
-   - CI/CD, infrastructure as code, monitoring
+3. **📊 Hiring, Performance & Metrics**
+   - Recruitment and hiring
+   - Performance management
+   - Goal-setting and OKRs
+   - Data-driven decisions
+   - Metrics and analytics
 
-4. **🤖 Data & AI Engineering**
-   - 10+ roles for data engineers, ML engineers, AI specialists
-   - LLM development, prompt engineering
+4. **🌱 Culture, Communication & Engagement**
+   - Team culture building
+   - Psychological safety creation
+   - Communication strategies
+   - Team engagement
+   - Inclusion and belonging
 
-5. **🏗️ Architecture & System Design**
-   - 8+ roles for architects and senior designers
-   - System design, API design, design patterns
-
-6. **📚 Languages & Computer Science**
-   - 25+ roles for programming languages
-   - Data structures, algorithms, CS fundamentals
-
-7. **🎯 Specialized Professional Roles**
-   - 15+ unique roles: product managers, DevRel, technical writers
-   - iOS, Android, game development
+5. **📈 Career Growth & Development**
+   - Career path development
+   - Individual development plans
+   - Succession planning
+   - Skill development
+   - High-potential talent building
 
 ### 4 Slash Commands
 
-- **`/learn`** - Choose a role and start your personalized learning journey
-- **`/browse-role`** - Explore all 69 available roles and search by keyword
-- **`/assess`** - Evaluate your knowledge and get recommendations
-- **`/roadmap [role]`** - View detailed learning path for any role
+- **`/manage`** - Access management tools, templates, and frameworks
+- **`/guide`** - Get expert advice on specific management challenges
+- **`/assess-team`** - Evaluate team health and get recommendations
+- **`/strategies`** - Plan technical and organizational strategies
 
-### 7 Invokable Skills
+### 5 Invokable Skills
 
-Each skill provides hands-on learning for its category:
+Each skill provides hands-on management tools:
 
-1. **frontend-web** - HTML, CSS, JavaScript, React, Vue, Angular
-2. **backend-server** - Python, Java, Node.js, Go, databases, APIs
-3. **cloud-devops** - Docker, Kubernetes, Terraform, AWS, CI/CD
-4. **data-ai** - Data engineering, ML, AI, LLMs, prompt engineering
-5. **architecture-design** - System design, API design, design patterns
-6. **languages-fundamentals** - Programming languages, CS theory, Git
-7. **specialized-roles** - Product management, DevRel, UX, mobile, games
+1. **team-dynamics** - Team leadership, delegation, mentoring, communication
+2. **technical-decision-making** - Architecture decisions, tech choices, roadmaps
+3. **hiring-recruitment** - Recruiting, interviewing, hiring processes
+4. **performance-management** - Reviews, goals, OKRs, metrics, feedback
+5. **culture-engagement** - Culture building, safety, communication, engagement
 
 ## Plugin Structure
 
 ```
-developer-roadmap-plugin/
+custom-plugin-engineering-manager/
 ├── .claude-plugin/
 │   └── plugin.json                # Plugin manifest
 │
-├── agents/                         # 7 Specialized agents
-│   ├── 01-frontend-web-agent.md
-│   ├── 02-backend-server-agent.md
-│   ├── 03-cloud-devops-agent.md
-│   ├── 04-data-ai-agent.md
-│   ├── 05-architecture-design-agent.md
-│   ├── 06-languages-fundamentals-agent.md
-│   └── 07-specialized-roles-agent.md
+├── agents/                         # 5 Specialized agents
+│   ├── 01-team-leadership-agent.md
+│   ├── 02-technical-strategy-agent.md
+│   ├── 03-hiring-performance-agent.md
+│   ├── 04-culture-engagement-agent.md
+│   └── 05-growth-development-agent.md
 │
 ├── commands/                       # 4 Slash commands
-│   ├── learn.md
-│   ├── browse-role.md
-│   ├── assess.md
-│   └── roadmap.md
+│   ├── manage.md
+│   ├── guide.md
+│   ├── assess-team.md
+│   └── strategies.md
 │
-├── skills/                         # 7 Invokable skills
-│   ├── frontend-web/SKILL.md
-│   ├── backend-server/SKILL.md
-│   ├── cloud-devops/SKILL.md
-│   ├── data-ai/SKILL.md
-│   ├── architecture-design/SKILL.md
-│   ├── languages-fundamentals/SKILL.md
-│   └── specialized-roles/SKILL.md
+├── skills/                         # 5 Invokable skills
+│   ├── team-dynamics/SKILL.md
+│   ├── technical-decision-making/SKILL.md
+│   ├── hiring-recruitment/SKILL.md
+│   ├── performance-management/SKILL.md
+│   └── culture-engagement/SKILL.md
 │
 ├── hooks/
 │   └── hooks.json                # Automation hooks
-│
-├── config/
-│   ├── agent-registry.json       # Agent mappings
-│   └── role-database.json        # 69 roles database
 │
 ├── README.md
 └── LICENSE
 ```
 
-## 69 Available Roles
+## Management Areas Covered
 
-### Frontend & Web Development (12)
-Frontend, Frontend (Beginner), React, Vue, Angular, Next.js, HTML, CSS, JavaScript, UX Design, Web Performance, Testing
+### People & Team Management
+- Building and developing teams
+- 1-on-1 meetings and mentoring
+- Delegation and empowerment
+- Conflict resolution
+- Leadership development
+- Psychological safety
+- Team dynamics
 
-### Backend & Server Development (15+)
-Backend, Backend (Beginner), Full-Stack, Python, JavaScript/Node.js, TypeScript, Java, Go, Rust, PHP, Kotlin, C++, Spring Boot, ASP.NET Core, Laravel
+### Technical Leadership
+- Architecture decisions
+- Technology selection
+- Technical roadmaps
+- Technical debt management
+- System design
+- Technical excellence
+- Scaling strategies
 
-### Cloud & DevOps Infrastructure (10+)
-DevOps, AWS, Kubernetes, Docker, Terraform, Linux, Cloudflare, SRE
+### Hiring & Talent
+- Recruitment process
+- Interview techniques
+- Candidate assessment
+- Onboarding
+- Talent planning
+- Succession planning
+- Retention strategies
 
-### Data & AI Engineering (10+)
-Data Engineer, Data Analyst, BI Analyst, DBA, Machine Learning Engineer, AI Engineer, AI Data Scientist, AI Agents, MLOps, Prompt Engineer
+### Performance Management
+- Goal-setting and OKRs
+- Performance reviews
+- Feedback and coaching
+- Metrics and analytics
+- Career development
+- Promotions
+- Recognition
 
-### Architecture & System Design (8+)
-Software Architect, System Design, API Design, Design Patterns, Code Review, UX Design, Design System
-
-### Languages & Fundamentals (25+)
-Python, JavaScript, TypeScript, Java, Go, Rust, PHP, Kotlin, C++, HTML, CSS, SQL, Git, Shell/Bash, Cyber Security, Data Structures & Algorithms, Blockchain, Computer Science
-
-### Specialized Professional Roles (15+)
-Product Manager, Engineering Manager, DevRel, Technical Writer, iOS, Android, React Native, Flutter, Game Developer, Server-Side Game Developer
+### Culture & Engagement
+- Team culture building
+- Psychological safety
+- Communication
+- Engagement strategies
+- Inclusion and diversity
+- Retention
+- Team rituals
 
 ## Usage Examples
 
-### Example 1: Career Switcher
+### Example 1: New Engineering Manager
 
 ```
-User: "I want to become a backend developer"
+You: "I just became an engineering manager. Where do I start?"
 
-/learn
-→ Select: Backend & Server Development
-→ Choose: Backend Developer (Beginner)
-→ Get: 6-month personalized learning plan
+/manage team-leadership
+→ Get 1-on-1 meeting template
+→ Get delegation framework
+→ Get mentoring guidance
+
+/guide new-manager
+→ Get foundational leadership advice
+→ Get first 90-day plan
 ```
 
-### Example 2: Specialist Deepening
+### Example 2: Team Performance Issues
 
 ```
-User: "I'm a frontend developer, how do I learn React?"
+You: "My team's morale is low and people seem disengaged"
 
-/browse-role react
-→ See React specialist path details
+/assess-team engagement
+→ Get detailed engagement evaluation
+→ Identify specific problems
+→ Get prioritized recommendations
 
-/roadmap react --detailed
-→ Get 6-month React mastery plan
+/guide engagement
+→ Get evidence-based improvement strategies
+→ Get action plan
+
+/manage culture
+→ Access team engagement templates
+→ Get recognition program template
 ```
 
-### Example 3: Learning Assessment
+### Example 3: Hiring Challenges
 
 ```
-User: "How good are my skills?"
+You: "I need to hire 2 engineers but my interview process is weak"
 
-/assess
-→ Interactive assessment across all areas
+/manage hiring
+→ Get job description template
+→ Get interview plan template
+→ Get candidate scorecard
+
+/guide interviewing
+→ Get structured interview techniques
+→ Get assessment best practices
+```
+
+### Example 4: Technical Strategy
+
+```
+You: "Should we refactor our monolith or switch to microservices?"
+
+/guide architecture-decision
+→ Get decision-making framework
+→ Get trade-off analysis
+→ Get recommendations
+
+/strategies technical
+→ Create technical roadmap
+→ Plan migration path
 ```
 
 ## Plugin Specifications
 
-- **Total Agents**: 7
+- **Total Agents**: 5
 - **Total Commands**: 4
-- **Total Skills**: 7
-- **Total Roles**: 69
-- **Estimated Total Learning Hours**: 1000+
-- **Projects**: 500+
-- **Resources**: 1000+
+- **Total Skills**: 5
+- **Management Templates**: 100+
+- **Best Practices**: 500+
+- **Frameworks**: 50+
+
+## Key Resources
+
+### Templates
+- 1-on-1 meeting template
+- Performance review template
+- OKR planning template
+- Job description template
+- Interview plan template
+- Career development plan
+- Team strategy template
+- Technical roadmap template
+- And 100+ more...
+
+### Frameworks
+- Leadership frameworks
+- Decision-making frameworks
+- Team development models
+- Performance management process
+- Hiring process framework
+- Career ladder design
+- Tech selection framework
+- And 50+ more...
+
+### Tools & Guides
+- Team assessment rubrics
+- Engagement survey templates
+- Culture evaluation tools
+- Technical debt tracking
+- Metrics dashboards
+- Hiring scorecards
+- And comprehensive guides for each topic...
+
+## How It Works
+
+### 4 Main Commands
+
+1. **`/manage`** → Access all templates and frameworks
+2. **`/guide`** → Get expert advice on challenges
+3. **`/assess-team`** → Evaluate team health
+4. **`/strategies`** → Plan technical and organizational roadmaps
+
+### 5 Expert Agents
+
+Behind each command are specialized agents:
+- **Team Leadership Agent** 👥 - People management
+- **Technical Strategy Agent** 🏗️ - Technical decisions
+- **Hiring & Performance Agent** 📊 - Talent and metrics
+- **Culture & Engagement Agent** 🌱 - Culture and communication
+- **Growth & Development Agent** 📈 - Career development
+
+### 5 Invokable Skills
+
+Hands-on tools for specific tasks:
+- Team dynamics and leadership
+- Technical decision-making
+- Hiring and recruitment
+- Performance management
+- Culture and engagement
 
 ## Version
 
@@ -223,13 +333,15 @@ MIT License - See LICENSE file for details
 
 ---
 
-**Ready to Transform Your Tech Career?** 🚀
+**Transform Your Engineering Leadership!** 🚀
 
 ```
-/learn        → Start your learning journey
-/browse-role  → Explore all available roles
-/assess       → Evaluate your knowledge
-/roadmap      → View detailed learning paths
+/manage       → Access templates and frameworks
+/guide        → Get expert guidance
+/assess-team  → Evaluate team health
+/strategies   → Plan your strategy
 ```
 
-Happy learning! 📚✨
+**Start with:** `/manage` or `/guide [challenge]`
+
+Good luck managing your team! 👥✨
