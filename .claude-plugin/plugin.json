@@ -1,98 +1,125 @@
 {
-  "name": "Engineering Manager - Professional Leadership Plugin",
+  "name": "Developer Roadmap Learning System",
   "version": "1.0.0",
-  "description": "Comprehensive engineering management toolkit for technical leaders. Build high-performing teams, guide technical strategy, develop talent, and drive organizational excellence.",
+  "description": "Ultra-comprehensive learning system for 65+ developer roles with specialized agents, interactive roadmaps, hands-on skills, and guided learning paths based on roadmap.sh.",
   "author": "Claude Code",
   "repository": "https://github.com/pluginagentmarketplace/custom-plugin-engineering-manager",
   "keywords": [
-    "engineering-management",
-    "technical-leadership",
-    "team-management",
-    "hiring",
-    "performance",
+    "learning",
+    "developer-roadmap",
     "career-development",
-    "strategy",
-    "culture"
+    "skill-learning",
+    "technical-skills",
+    "programming",
+    "education",
+    "roadmap"
   ],
   "agents": [
     {
-      "name": "team-leadership-agent",
-      "displayName": "Team Leadership & People Management",
-      "description": "Expert in building high-performing teams, mentoring, 1-on-1s, delegation, and people development"
+      "name": "frontend-web-agent",
+      "displayName": "Frontend & Web Development",
+      "description": "Master web technologies: HTML, CSS, JavaScript, React, Vue, Angular, web performance, testing, and UI/UX design. Covers 15+ frontend-related roles."
     },
     {
-      "name": "technical-strategy-agent",
-      "displayName": "Technical Strategy & Architecture",
-      "description": "Guides technical direction, architecture decisions, technology roadmaps, and technical excellence"
+      "name": "backend-server-agent",
+      "displayName": "Backend & Server Development",
+      "description": "Complete backend mastery: Python, Node.js, Java, Go, Rust, PHP, databases, APIs, microservices. Covers 18+ server-side programming roles."
     },
     {
-      "name": "hiring-performance-agent",
-      "displayName": "Hiring, Performance & Metrics",
-      "description": "Specializes in recruitment, performance management, goal-setting, and data-driven decisions"
+      "name": "cloud-devops-agent",
+      "displayName": "Cloud & DevOps Infrastructure",
+      "description": "Cloud expertise: AWS, Azure, GCP, Docker, Kubernetes, Terraform, CI/CD, monitoring. Covers 12+ cloud and infrastructure roles."
     },
     {
-      "name": "culture-engagement-agent",
-      "displayName": "Culture, Communication & Engagement",
-      "description": "Focuses on team culture, psychological safety, transparent communication, and retention"
+      "name": "data-ai-agent",
+      "displayName": "Data & AI Engineering",
+      "description": "Data science and AI: ML engineering, data engineering, AI systems, deep learning, LLMs, prompt engineering. Covers 12+ data and AI roles."
     },
     {
-      "name": "growth-development-agent",
-      "displayName": "Career Growth & Development",
-      "description": "Supports career paths, skill development, succession planning, and team advancement"
+      "name": "architecture-design-agent",
+      "displayName": "Architecture & System Design",
+      "description": "System architecture mastery: API design, design patterns, system design, code quality, UX design, design systems. Covers 10+ architecture roles."
+    },
+    {
+      "name": "languages-fundamentals-agent",
+      "displayName": "Programming Languages & CS",
+      "description": "Programming languages and fundamentals: Python, JavaScript, Java, Go, Rust, C++, data structures, algorithms, git. Covers 25+ language roles."
+    },
+    {
+      "name": "specialized-roles-agent",
+      "displayName": "Specialized Professional Roles",
+      "description": "Unique career paths: product management, DevRel, technical writing, mobile development (iOS/Android), game development. Covers 15+ specialized roles."
     }
   ],
   "commands": [
     {
-      "name": "manage",
-      "displayName": "Management Toolkit",
-      "description": "Access management tools, templates, frameworks, and best practices"
+      "name": "learn",
+      "displayName": "Start Learning Journey",
+      "description": "Choose a developer role and begin your personalized learning path with guided roadmap"
     },
     {
-      "name": "guide",
-      "displayName": "Get Expert Guidance",
-      "description": "Get advice on specific management challenges and situations"
+      "name": "browse",
+      "displayName": "Browse All Roles",
+      "description": "Explore all 65+ developer roles across 7 specialization areas"
     },
     {
-      "name": "assess-team",
-      "displayName": "Team Assessment",
-      "description": "Evaluate team health, dynamics, performance, and engagement"
+      "name": "assess",
+      "displayName": "Assess Your Skills",
+      "description": "Evaluate your current knowledge level and get personalized learning recommendations"
     },
     {
-      "name": "strategies",
-      "displayName": "Strategic Planning",
-      "description": "Plan technical strategies, organizational roadmaps, and long-term vision"
+      "name": "roadmap",
+      "displayName": "View Detailed Roadmap",
+      "description": "Get detailed learning path, timeline, resources, and projects for any role"
+    },
+    {
+      "name": "projects",
+      "displayName": "Hands-on Projects",
+      "description": "Access 500+ hands-on projects from beginner to expert level"
     }
   ],
   "skills": [
     {
-      "name": "team-dynamics",
-      "displayName": "Team Dynamics & Leadership",
-      "category": "people-management",
-      "description": "Building teams, managing dynamics, leadership principles, and mentorship"
+      "name": "frontend-web",
+      "displayName": "Frontend Web Development",
+      "category": "web-technologies",
+      "description": "HTML5, CSS3, JavaScript, React, Vue, Angular, web performance, accessibility, testing, UI frameworks"
     },
     {
-      "name": "technical-decision-making",
-      "displayName": "Technical Decision Making",
-      "category": "technical-strategy",
-      "description": "Architecture decisions, tech choices, technical roadmaps, and technical strategy"
+      "name": "backend-server",
+      "displayName": "Backend Server Development",
+      "category": "server-development",
+      "description": "Python, Node.js, Java, Go, Rust, PHP, databases, APIs, microservices, authentication, caching"
     },
     {
-      "name": "hiring-recruitment",
-      "displayName": "Hiring & Recruitment",
-      "category": "talent",
-      "description": "Recruiting, interviewing, hiring processes, and talent acquisition"
+      "name": "cloud-devops",
+      "displayName": "Cloud & DevOps",
+      "category": "infrastructure",
+      "description": "AWS, Docker, Kubernetes, Terraform, CI/CD pipelines, monitoring, logging, container orchestration"
     },
     {
-      "name": "performance-management",
-      "displayName": "Performance Management",
-      "category": "performance",
-      "description": "Performance reviews, feedback, goal-setting, and metrics"
+      "name": "data-ai-ml",
+      "displayName": "Data & AI/ML Engineering",
+      "category": "data-science",
+      "description": "Data pipelines, machine learning, deep learning, NLP, computer vision, LLMs, prompt engineering"
     },
     {
-      "name": "culture-engagement",
-      "displayName": "Culture & Engagement",
-      "category": "culture",
-      "description": "Building culture, retention, team engagement, and psychological safety"
+      "name": "architecture-design",
+      "displayName": "Architecture & Design",
+      "category": "system-design",
+      "description": "System design, API design, design patterns, scalability, performance optimization, code quality"
+    },
+    {
+      "name": "languages-fundamentals",
+      "displayName": "Languages & Fundamentals",
+      "category": "core-skills",
+      "description": "Programming languages, data structures, algorithms, computer science theory, version control"
+    },
+    {
+      "name": "specialized-careers",
+      "displayName": "Specialized Career Paths",
+      "category": "professional-roles",
+      "description": "Product management, DevRel, technical writing, mobile dev, game dev, specialized tooling"
     }
   ],
   "hooks": {
@@ -100,9 +127,10 @@
     "location": "hooks/hooks.json"
   },
   "settings": {
-    "managementTools": true,
-    "performanceTracking": true,
-    "teamAssessment": true,
-    "strategicPlanning": true
+    "learningPathTracking": true,
+    "progressMonitoring": true,
+    "skillAssessment": true,
+    "projectValidation": true,
+    "certificateGeneration": true
   }
 }
