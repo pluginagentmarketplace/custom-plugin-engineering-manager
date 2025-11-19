@@ -1,0 +1,136 @@
+{
+  "name": "Developer Roadmap Learning System",
+  "version": "1.0.0",
+  "description": "Ultra-comprehensive learning system for 65+ developer roles with specialized agents, interactive roadmaps, hands-on skills, and guided learning paths based on roadmap.sh.",
+  "author": "Claude Code",
+  "repository": "https://github.com/pluginagentmarketplace/custom-plugin-engineering-manager",
+  "keywords": [
+    "learning",
+    "developer-roadmap",
+    "career-development",
+    "skill-learning",
+    "technical-skills",
+    "programming",
+    "education",
+    "roadmap"
+  ],
+  "agents": [
+    {
+      "name": "frontend-web-agent",
+      "displayName": "Frontend & Web Development",
+      "description": "Master web technologies: HTML, CSS, JavaScript, React, Vue, Angular, web performance, testing, and UI/UX design. Covers 15+ frontend-related roles."
+    },
+    {
+      "name": "backend-server-agent",
+      "displayName": "Backend & Server Development",
+      "description": "Complete backend mastery: Python, Node.js, Java, Go, Rust, PHP, databases, APIs, microservices. Covers 18+ server-side programming roles."
+    },
+    {
+      "name": "cloud-devops-agent",
+      "displayName": "Cloud & DevOps Infrastructure",
+      "description": "Cloud expertise: AWS, Azure, GCP, Docker, Kubernetes, Terraform, CI/CD, monitoring. Covers 12+ cloud and infrastructure roles."
+    },
+    {
+      "name": "data-ai-agent",
+      "displayName": "Data & AI Engineering",
+      "description": "Data science and AI: ML engineering, data engineering, AI systems, deep learning, LLMs, prompt engineering. Covers 12+ data and AI roles."
+    },
+    {
+      "name": "architecture-design-agent",
+      "displayName": "Architecture & System Design",
+      "description": "System architecture mastery: API design, design patterns, system design, code quality, UX design, design systems. Covers 10+ architecture roles."
+    },
+    {
+      "name": "languages-fundamentals-agent",
+      "displayName": "Programming Languages & CS",
+      "description": "Programming languages and fundamentals: Python, JavaScript, Java, Go, Rust, C++, data structures, algorithms, git. Covers 25+ language roles."
+    },
+    {
+      "name": "specialized-roles-agent",
+      "displayName": "Specialized Professional Roles",
+      "description": "Unique career paths: product management, DevRel, technical writing, mobile development (iOS/Android), game development. Covers 15+ specialized roles."
+    }
+  ],
+  "commands": [
+    {
+      "name": "learn",
+      "displayName": "Start Learning Journey",
+      "description": "Choose a developer role and begin your personalized learning path with guided roadmap"
+    },
+    {
+      "name": "browse",
+      "displayName": "Browse All Roles",
+      "description": "Explore all 65+ developer roles across 7 specialization areas"
+    },
+    {
+      "name": "assess",
+      "displayName": "Assess Your Skills",
+      "description": "Evaluate your current knowledge level and get personalized learning recommendations"
+    },
+    {
+      "name": "roadmap",
+      "displayName": "View Detailed Roadmap",
+      "description": "Get detailed learning path, timeline, resources, and projects for any role"
+    },
+    {
+      "name": "projects",
+      "displayName": "Hands-on Projects",
+      "description": "Access 500+ hands-on projects from beginner to expert level"
+    }
+  ],
+  "skills": [
+    {
+      "name": "frontend-web",
+      "displayName": "Frontend Web Development",
+      "category": "web-technologies",
+      "description": "HTML5, CSS3, JavaScript, React, Vue, Angular, web performance, accessibility, testing, UI frameworks"
+    },
+    {
+      "name": "backend-server",
+      "displayName": "Backend Server Development",
+      "category": "server-development",
+      "description": "Python, Node.js, Java, Go, Rust, PHP, databases, APIs, microservices, authentication, caching"
+    },
+    {
+      "name": "cloud-devops",
+      "displayName": "Cloud & DevOps",
+      "category": "infrastructure",
+      "description": "AWS, Docker, Kubernetes, Terraform, CI/CD pipelines, monitoring, logging, container orchestration"
+    },
+    {
+      "name": "data-ai-ml",
+      "displayName": "Data & AI/ML Engineering",
+      "category": "data-science",
+      "description": "Data pipelines, machine learning, deep learning, NLP, computer vision, LLMs, prompt engineering"
+    },
+    {
+      "name": "architecture-design",
+      "displayName": "Architecture & Design",
+      "category": "system-design",
+      "description": "System design, API design, design patterns, scalability, performance optimization, code quality"
+    },
+    {
+      "name": "languages-fundamentals",
+      "displayName": "Languages & Fundamentals",
+      "category": "core-skills",
+      "description": "Programming languages, data structures, algorithms, computer science theory, version control"
+    },
+    {
+      "name": "specialized-careers",
+      "displayName": "Specialized Career Paths",
+      "category": "professional-roles",
+      "description": "Product management, DevRel, technical writing, mobile dev, game dev, specialized tooling"
+    }
+  ],
+  "hooks": {
+    "enabled": true,
+    "location": "hooks/hooks.json"
+  },
+  "settings": {
+    "learningPathTracking": true,
+    "progressMonitoring": true,
+    "skillAssessment": true,
+    "projectValidation": true,
+    "certificateGeneration": true
+  }
+}

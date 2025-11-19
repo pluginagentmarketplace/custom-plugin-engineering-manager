@@ -1,0 +1,54 @@
+{
+  "hooks": {
+    "user-prompt-submit": {
+      "enabled": true,
+      "description": "Track user progress and learning engagement",
+      "scripts": [
+        {
+          "name": "track-learning-progress",
+          "description": "Update learning progress tracking",
+          "trigger": "after-command",
+          "commands": ["/learn", "/roadmap", "/assess"]
+        }
+      ]
+    },
+    "on-skill-invoked": {
+      "enabled": true,
+      "description": "Log skill usage for analytics",
+      "scripts": [
+        {
+          "name": "skill-usage-tracker",
+          "description": "Track which skills are being used",
+          "trigger": "skill-invoked"
+        }
+      ]
+    },
+    "on-agent-invoked": {
+      "enabled": true,
+      "description": "Log agent interactions",
+      "scripts": [
+        {
+          "name": "agent-interaction-tracker",
+          "description": "Track which agents are being invoked",
+          "trigger": "agent-invoked"
+        }
+      ]
+    }
+  },
+  "analytics": {
+    "enabled": true,
+    "trackingItems": [
+      "command-usage",
+      "agent-invocations",
+      "skill-invocations",
+      "learning-progress",
+      "user-engagement"
+    ]
+  },
+  "settings": {
+    "progressTracking": true,
+    "learningPathValidation": true,
+    "skillAssessment": true,
+    "autoProgressSave": true
+  }
+}
