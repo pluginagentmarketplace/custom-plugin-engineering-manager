@@ -1,0 +1,13 @@
+review_cycles:
+  - annual
+  - semi_annual
+  - quarterly
+metrics:
+  - goal_achievement
+  - technical_growth
+  - collaboration
+  - impact
+frameworks:
+  - objectives_key_results
+  - performance_improvement_plan
+  - continuous_feedback

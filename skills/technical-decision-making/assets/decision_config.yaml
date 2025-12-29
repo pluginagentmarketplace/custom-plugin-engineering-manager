@@ -1,0 +1,10 @@
+frameworks:
+  - adr_architecture_decision_records
+  - rfc_request_for_comments
+  - tech_radar
+criteria:
+  - feasibility
+  - scalability
+  - maintainability
+  - team_capability
+  - timeline

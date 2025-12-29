@@ -1,0 +1,11 @@
+process:
+  - job_description
+  - sourcing
+  - screening
+  - interviews
+  - offer
+interview_types:
+  - technical
+  - behavioral
+  - system_design
+  - culture_fit

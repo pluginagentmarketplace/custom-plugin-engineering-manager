@@ -1,5 +1,5 @@
 {
-  "name": "Developer Roadmap Learning System",
+  "name": "engineering-manager-assistant",
   "version": "1.0.0",
   "description": "Ultra-comprehensive learning system for 65+ developer roles with specialized agents, interactive roadmaps, hands-on skills, and guided learning paths based on roadmap.sh.",
   "author": "Claude Code",
@@ -132,5 +132,6 @@
     "skillAssessment": true,
     "projectValidation": true,
     "certificateGeneration": true
-  }
+  },
+  "license": "SEE LICENSE IN LICENSE"
 }

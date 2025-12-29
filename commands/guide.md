@@ -1,3 +1,9 @@
+---
+name: guide
+description: Get Expert Guidance
+allowed-tools: Read
+---
+
 # /guide - Get Expert Guidance
 
 Get expert advice and guidance on specific management challenges, situations, and decisions you face as an engineering manager.

@@ -1,0 +1,10 @@
+team_stages:
+  - forming
+  - storming
+  - norming
+  - performing
+activities:
+  - retrospectives
+  - team_building
+  - conflict_resolution
+  - psychological_safety

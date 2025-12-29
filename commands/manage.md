@@ -1,3 +1,9 @@
+---
+name: manage
+description: Management Toolkit
+allowed-tools: Read
+---
+
 # /manage - Management Toolkit
 
 Access comprehensive management tools, templates, frameworks, and best practices for engineering leadership.

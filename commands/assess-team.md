@@ -1,3 +1,9 @@
+---
+name: assess-team
+description: team - Team Assessment & Health Check
+allowed-tools: Read
+---
+
 # /assess-team - Team Assessment & Health Check
 
 Evaluate your team's health, dynamics, performance, engagement, and get actionable recommendations for improvement.

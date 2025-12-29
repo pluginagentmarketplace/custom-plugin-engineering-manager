@@ -1,347 +1,257 @@
-# Engineering Manager - Professional Leadership Plugin
+<div align="center">
 
-🚀 **Comprehensive engineering management toolkit** for technical leaders. Build high-performing teams, guide technical strategy, develop talent, and drive organizational excellence.
+<!-- Animated Typing Banner -->
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=2E9EF7&center=true&vCenter=true&multiline=true&repeat=true&width=600&height=100&lines=Engineering+Manager+Assistant;5+Agents+%7C+5+Skills;Claude+Code+Plugin" alt="Engineering Manager Assistant" />
 
-## Overview
+<br/>
 
-Transform your engineering leadership with expert guidance, professional templates, and strategic frameworks. This Claude Code plugin provides:
+<!-- Badge Row 1: Status Badges -->
+[![Version](https://img.shields.io/badge/Version-1.0.0-blue?style=for-the-badge)](https://github.com/pluginagentmarketplace/custom-plugin-engineering-manager/releases)
+[![License](https://img.shields.io/badge/License-Custom-yellow?style=for-the-badge)](LICENSE)
+[![Status](https://img.shields.io/badge/Status-Production-brightgreen?style=for-the-badge)](#)
+[![SASMP](https://img.shields.io/badge/SASMP-v1.3.0-blueviolet?style=for-the-badge)](#)
 
-- **5 Specialized Agents** - Expert guidance on people, strategy, hiring, culture, and growth
-- **5 Invokable Skills** - Hands-on tools for team dynamics, technical decisions, hiring, performance, and culture
-- **4 Slash Commands** - Management toolkit, expert guidance, team assessment, and strategic planning
-- **100+ Templates & Frameworks** - Ready-to-use for management activities
-- **500+ Best Practices** - From top engineering leaders and industry research
+<!-- Badge Row 2: Content Badges -->
+[![Agents](https://img.shields.io/badge/Agents-5-orange?style=flat-square&logo=robot)](#-agents)
+[![Skills](https://img.shields.io/badge/Skills-5-purple?style=flat-square&logo=lightning)](#-skills)
+[![Commands](https://img.shields.io/badge/Commands-4-green?style=flat-square&logo=terminal)](#-commands)
 
-## Quick Start
+<br/>
 
-### Installation
-
-```bash
-# In Claude Code, add this plugin:
-/plugin-add ./custom-plugin-engineering-manager
-```
-
-### First Commands
-
-1. **Get Management Tools**
-   ```
-   /manage
-   ```
-   Access templates, frameworks, and best practices
-
-2. **Get Expert Guidance**
-   ```
-   /guide [challenge]
-   ```
-   Get advice on specific management situations
-
-3. **Assess Your Team**
-   ```
-   /assess-team
-   ```
-   Evaluate team health and get recommendations
-
-4. **Plan Strategy**
-   ```
-   /strategies [period]
-   ```
-   Create technical and organizational strategies
-
-## Features
-
-### 5 Specialized Agents
-
-Each agent is an expert in engineering management:
-
-1. **👥 Team Leadership & People Management**
-   - Building high-performing teams
-   - 1-on-1 meetings and mentoring
-   - Delegation and empowerment
-   - Conflict resolution
-   - Psychological safety
-
-2. **🏗️ Technical Strategy & Architecture**
-   - Technical decision-making
-   - Architecture selection
-   - Technology roadmaps
-   - Technical debt management
-   - System design guidance
-
-3. **📊 Hiring, Performance & Metrics**
-   - Recruitment and hiring
-   - Performance management
-   - Goal-setting and OKRs
-   - Data-driven decisions
-   - Metrics and analytics
-
-4. **🌱 Culture, Communication & Engagement**
-   - Team culture building
-   - Psychological safety creation
-   - Communication strategies
-   - Team engagement
-   - Inclusion and belonging
-
-5. **📈 Career Growth & Development**
-   - Career path development
-   - Individual development plans
-   - Succession planning
-   - Skill development
-   - High-potential talent building
-
-### 4 Slash Commands
-
-- **`/manage`** - Access management tools, templates, and frameworks
-- **`/guide`** - Get expert advice on specific management challenges
-- **`/assess-team`** - Evaluate team health and get recommendations
-- **`/strategies`** - Plan technical and organizational strategies
-
-### 5 Invokable Skills
-
-Each skill provides hands-on management tools:
-
-1. **team-dynamics** - Team leadership, delegation, mentoring, communication
-2. **technical-decision-making** - Architecture decisions, tech choices, roadmaps
-3. **hiring-recruitment** - Recruiting, interviewing, hiring processes
-4. **performance-management** - Reviews, goals, OKRs, metrics, feedback
-5. **culture-engagement** - Culture building, safety, communication, engagement
-
-## Plugin Structure
-
-```
-custom-plugin-engineering-manager/
-├── .claude-plugin/
-│   └── plugin.json                # Plugin manifest
-│
-├── agents/                         # 5 Specialized agents
-│   ├── 01-team-leadership-agent.md
-│   ├── 02-technical-strategy-agent.md
-│   ├── 03-hiring-performance-agent.md
-│   ├── 04-culture-engagement-agent.md
-│   └── 05-growth-development-agent.md
-│
-├── commands/                       # 4 Slash commands
-│   ├── manage.md
-│   ├── guide.md
-│   ├── assess-team.md
-│   └── strategies.md
-│
-├── skills/                         # 5 Invokable skills
-│   ├── team-dynamics/SKILL.md
-│   ├── technical-decision-making/SKILL.md
-│   ├── hiring-recruitment/SKILL.md
-│   ├── performance-management/SKILL.md
-│   └── culture-engagement/SKILL.md
-│
-├── hooks/
-│   └── hooks.json                # Automation hooks
-│
-├── README.md
-└── LICENSE
-```
-
-## Management Areas Covered
-
-### People & Team Management
-- Building and developing teams
-- 1-on-1 meetings and mentoring
-- Delegation and empowerment
-- Conflict resolution
-- Leadership development
-- Psychological safety
-- Team dynamics
-
-### Technical Leadership
-- Architecture decisions
-- Technology selection
-- Technical roadmaps
-- Technical debt management
-- System design
-- Technical excellence
-- Scaling strategies
-
-### Hiring & Talent
-- Recruitment process
-- Interview techniques
-- Candidate assessment
-- Onboarding
-- Talent planning
-- Succession planning
-- Retention strategies
-
-### Performance Management
-- Goal-setting and OKRs
-- Performance reviews
-- Feedback and coaching
-- Metrics and analytics
-- Career development
-- Promotions
-- Recognition
-
-### Culture & Engagement
-- Team culture building
-- Psychological safety
-- Communication
-- Engagement strategies
-- Inclusion and diversity
-- Retention
-- Team rituals
-
-## Usage Examples
-
-### Example 1: New Engineering Manager
-
-```
-You: "I just became an engineering manager. Where do I start?"
-
-/manage team-leadership
-→ Get 1-on-1 meeting template
-→ Get delegation framework
-→ Get mentoring guidance
-
-/guide new-manager
-→ Get foundational leadership advice
-→ Get first 90-day plan
-```
-
-### Example 2: Team Performance Issues
-
-```
-You: "My team's morale is low and people seem disengaged"
-
-/assess-team engagement
-→ Get detailed engagement evaluation
-→ Identify specific problems
-→ Get prioritized recommendations
-
-/guide engagement
-→ Get evidence-based improvement strategies
-→ Get action plan
-
-/manage culture
-→ Access team engagement templates
-→ Get recognition program template
-```
-
-### Example 3: Hiring Challenges
-
-```
-You: "I need to hire 2 engineers but my interview process is weak"
-
-/manage hiring
-→ Get job description template
-→ Get interview plan template
-→ Get candidate scorecard
-
-/guide interviewing
-→ Get structured interview techniques
-→ Get assessment best practices
-```
-
-### Example 4: Technical Strategy
-
-```
-You: "Should we refactor our monolith or switch to microservices?"
-
-/guide architecture-decision
-→ Get decision-making framework
-→ Get trade-off analysis
-→ Get recommendations
-
-/strategies technical
-→ Create technical roadmap
-→ Plan migration path
-```
-
-## Plugin Specifications
-
-- **Total Agents**: 5
-- **Total Commands**: 4
-- **Total Skills**: 5
-- **Management Templates**: 100+
-- **Best Practices**: 500+
-- **Frameworks**: 50+
-
-## Key Resources
-
-### Templates
-- 1-on-1 meeting template
-- Performance review template
-- OKR planning template
-- Job description template
-- Interview plan template
-- Career development plan
-- Team strategy template
-- Technical roadmap template
-- And 100+ more...
-
-### Frameworks
-- Leadership frameworks
-- Decision-making frameworks
-- Team development models
-- Performance management process
-- Hiring process framework
-- Career ladder design
-- Tech selection framework
-- And 50+ more...
-
-### Tools & Guides
-- Team assessment rubrics
-- Engagement survey templates
-- Culture evaluation tools
-- Technical debt tracking
-- Metrics dashboards
-- Hiring scorecards
-- And comprehensive guides for each topic...
-
-## How It Works
-
-### 4 Main Commands
-
-1. **`/manage`** → Access all templates and frameworks
-2. **`/guide`** → Get expert advice on challenges
-3. **`/assess-team`** → Evaluate team health
-4. **`/strategies`** → Plan technical and organizational roadmaps
-
-### 5 Expert Agents
-
-Behind each command are specialized agents:
-- **Team Leadership Agent** 👥 - People management
-- **Technical Strategy Agent** 🏗️ - Technical decisions
-- **Hiring & Performance Agent** 📊 - Talent and metrics
-- **Culture & Engagement Agent** 🌱 - Culture and communication
-- **Growth & Development Agent** 📈 - Career development
-
-### 5 Invokable Skills
-
-Hands-on tools for specific tasks:
-- Team dynamics and leadership
-- Technical decision-making
-- Hiring and recruitment
-- Performance management
-- Culture and engagement
-
-## Version
-
-- **Plugin Version**: 1.0.0
-- **Format**: Claude Code Plugin Format (Official)
-- **Compatibility**: Claude Code 1.0+
-- **Last Updated**: November 18, 2024
-
-## License
-
-MIT License - See LICENSE file for details
+<!-- Quick CTA Row -->
+[📦 **Install Now**](#-quick-start) · [🤖 **Explore Agents**](#-agents) · [📖 **Documentation**](#-documentation) · [⭐ **Star this repo**](https://github.com/pluginagentmarketplace/custom-plugin-engineering-manager)
 
 ---
 
-**Transform Your Engineering Leadership!** 🚀
+### What is this?
+
+> **Engineering Manager Assistant** is a Claude Code plugin with **5 agents** and **5 skills** for engineering manager development.
+
+</div>
+
+---
+
+## 📑 Table of Contents
+
+<details>
+<summary>Click to expand</summary>
+
+- [Quick Start](#-quick-start)
+- [Features](#-features)
+- [Agents](#-agents)
+- [Skills](#-skills)
+- [Commands](#-commands)
+- [Documentation](#-documentation)
+- [Contributing](#-contributing)
+- [License](#-license)
+
+</details>
+
+---
+
+## 🚀 Quick Start
+
+### Prerequisites
+
+- Claude Code CLI v2.0.27+
+- Active Claude subscription
+
+### Installation (Choose One)
+
+<details open>
+<summary><strong>Option 1: From Marketplace (Recommended)</strong></summary>
+
+```bash
+# Step 1️⃣ Add the marketplace
+/plugin add marketplace pluginagentmarketplace/custom-plugin-engineering-manager
+
+# Step 2️⃣ Install the plugin
+/plugin install engineering-manager-assistant@pluginagentmarketplace-engineering-manager
+
+# Step 3️⃣ Restart Claude Code
+# Close and reopen your terminal/IDE
+```
+
+</details>
+
+<details>
+<summary><strong>Option 2: Local Installation</strong></summary>
+
+```bash
+# Clone the repository
+git clone https://github.com/pluginagentmarketplace/custom-plugin-engineering-manager.git
+cd custom-plugin-engineering-manager
+
+# Load locally
+/plugin load .
+
+# Restart Claude Code
+```
+
+</details>
+
+### ✅ Verify Installation
+
+After restart, you should see these agents:
 
 ```
-/manage       → Access templates and frameworks
-/guide        → Get expert guidance
-/assess-team  → Evaluate team health
-/strategies   → Plan your strategy
+engineering-manager-assistant:05-growth-development-agent
+engineering-manager-assistant:01-team-leadership-agent
+engineering-manager-assistant:02-technical-strategy-agent
+engineering-manager-assistant:04-culture-engagement-agent
+engineering-manager-assistant:03-hiring-performance-agent
 ```
 
-**Start with:** `/manage` or `/guide [challenge]`
+---
 
-Good luck managing your team! 👥✨
+## ✨ Features
+
+| Feature | Description |
+|---------|-------------|
+| 🤖 **5 Agents** | Specialized AI agents for engineering manager tasks |
+| 🛠️ **5 Skills** | Reusable capabilities with Golden Format |
+| ⌨️ **4 Commands** | Quick slash commands |
+| 🔄 **SASMP v1.3.0** | Full protocol compliance |
+
+---
+
+## 🤖 Agents
+
+### 5 Specialized Agents
+
+| # | Agent | Purpose |
+|---|-------|---------|
+| 1 | **05-growth-development-agent** | Supports career paths, skill development, succession plannin |
+| 2 | **01-team-leadership-agent** | Expert in building high-performing teams, mentoring, 1-on-1s |
+| 3 | **02-technical-strategy-agent** | Guides technical direction, architecture decisions, technolo |
+| 4 | **04-culture-engagement-agent** | Focuses on team culture, psychological safety, transparent c |
+| 5 | **03-hiring-performance-agent** | Specializes in recruitment, performance management, goal-set |
+
+---
+
+## 🛠️ Skills
+
+### Available Skills
+
+| Skill | Description | Invoke |
+|-------|-------------|--------|
+| `performance-management` | Master performance management, goal-setting, OKRs, performan | `Skill("engineering-manager-assistant:performance-management")` |
+| `team-dynamics` | Master team dynamics, leadership principles, delegation, 1-o | `Skill("engineering-manager-assistant:team-dynamics")` |
+| `culture-engagement` | Master team culture, psychological safety, engagement, commu | `Skill("engineering-manager-assistant:culture-engagement")` |
+| `hiring-recruitment` | Master hiring and recruitment processes, interviewing, asses | `Skill("engineering-manager-assistant:hiring-recruitment")` |
+| `technical-decision-making` | Master technical decision-making, architecture choices, tech | `Skill("engineering-manager-assistant:technical-decision-making")` |
+
+---
+
+## ⌨️ Commands
+
+| Command | Description |
+|---------|-------------|
+| `/assess-team` | team - Team Assessment & Health Check |
+| `/manage` | Management Toolkit |
+| `/strategies` | Strategic Planning & Vision |
+| `/guide` | Get Expert Guidance |
+
+---
+
+## 📚 Documentation
+
+| Document | Description |
+|----------|-------------|
+| [CHANGELOG.md](CHANGELOG.md) | Version history |
+| [CONTRIBUTING.md](CONTRIBUTING.md) | How to contribute |
+| [LICENSE](LICENSE) | License information |
+
+---
+
+## 📁 Project Structure
+
+<details>
+<summary>Click to expand</summary>
+
+```
+custom-plugin-engineering-manager/
+├── 📁 .claude-plugin/
+│   ├── plugin.json
+│   └── marketplace.json
+├── 📁 agents/              # 5 agents
+├── 📁 skills/              # 5 skills (Golden Format)
+├── 📁 commands/            # 4 commands
+├── 📁 hooks/
+├── 📄 README.md
+├── 📄 CHANGELOG.md
+└── 📄 LICENSE
+```
+
+</details>
+
+---
+
+## 📅 Metadata
+
+| Field | Value |
+|-------|-------|
+| **Version** | 1.0.0 |
+| **Last Updated** | 2025-12-29 |
+| **Status** | Production Ready |
+| **SASMP** | v1.3.0 |
+| **Agents** | 5 |
+| **Skills** | 5 |
+| **Commands** | 4 |
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Please read our [Contributing Guide](CONTRIBUTING.md).
+
+1. Fork the repository
+2. Create your feature branch
+3. Follow the Golden Format for new skills
+4. Submit a pull request
+
+---
+
+## ⚠️ Security
+
+> **Important:** This repository contains third-party code and dependencies.
+>
+> - ✅ Always review code before using in production
+> - ✅ Check dependencies for known vulnerabilities
+> - ✅ Follow security best practices
+> - ✅ Report security issues privately via [Issues](../../issues)
+
+---
+
+## 📝 License
+
+Copyright © 2025 **Dr. Umit Kacar** & **Muhsin Elcicek**
+
+Custom License - See [LICENSE](LICENSE) for details.
+
+---
+
+## 👥 Contributors
+
+<table>
+<tr>
+<td align="center">
+<strong>Dr. Umit Kacar</strong><br/>
+Senior AI Researcher & Engineer
+</td>
+<td align="center">
+<strong>Muhsin Elcicek</strong><br/>
+Senior Software Architect
+</td>
+</tr>
+</table>
+
+---
+
+<div align="center">
+
+**Made with ❤️ for the Claude Code Community**
+
+[![GitHub](https://img.shields.io/badge/GitHub-pluginagentmarketplace-black?style=for-the-badge&logo=github)](https://github.com/pluginagentmarketplace)
+
+</div>

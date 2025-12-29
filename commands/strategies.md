@@ -1,3 +1,9 @@
+---
+name: strategies
+description: Strategic Planning & Vision
+allowed-tools: Read
+---
+
 # /strategies - Strategic Planning & Vision
 
 Plan technical strategies, organizational roadmaps, long-term vision, and strategic initiatives for your engineering team.
