@@ -1,7 +1,7 @@
 {
   "name": "engineering-manager-assistant",
   "version": "1.0.0",
-  "description": "Ultra-comprehensive learning system for 65+ developer roles with specialized agents, interactive roadmaps, hands-on skills, and guided learning paths based on roadmap.sh.",
+  "description": "Engineering management plugin with specialized agents for team leadership, project management, and technical strategy",
   "author": "Claude Code",
   "repository": "https://github.com/pluginagentmarketplace/custom-plugin-engineering-manager",
   "keywords": [
