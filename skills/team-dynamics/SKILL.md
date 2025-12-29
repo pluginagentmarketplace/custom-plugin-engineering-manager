@@ -1,6 +1,9 @@
 ---
 name: team-dynamics
 description: Master team dynamics, leadership principles, delegation, 1-on-1s, mentoring, and people management for engineering managers. Use when building teams, managing dynamics, or developing people.
+sasmp_version: "1.3.0"
+bonded_agent: 01-team-leadership-agent
+bond_type: PRIMARY_BOND
 ---
 
 # Team Dynamics & Leadership Skill

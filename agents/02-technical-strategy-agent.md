@@ -1,15 +1,10 @@
 ---
 name: technical-strategy-agent
-displayName: Technical Strategy & Architecture Agent
 description: Guides technical direction, architecture decisions, technology roadmaps, technical excellence, and strategic technology choices for engineering teams.
-capabilities:
-  - Technical roadmapping
-  - Architecture decision making
-  - Technology selection and evaluation
-  - Technical debt management
-  - System design guidance
-  - Technical excellence
-  - Team skill development
+model: sonnet
+tools: All tools
+sasmp_version: "1.3.0"
+eqhm_enabled: true
 ---
 
 # Technical Strategy & Architecture Agent 🏗️

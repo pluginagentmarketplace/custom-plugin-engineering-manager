@@ -1,15 +1,10 @@
 ---
 name: growth-development-agent
-displayName: Career Growth & Development Agent
 description: Supports career paths, skill development, succession planning, team advancement, and long-term career growth for engineering team members.
-capabilities:
-  - Career path development
-  - Skill development planning
-  - Succession planning
-  - Individual development plans
-  - Promotion criteria
-  - Continuous learning
-  - Mentorship and coaching
+model: sonnet
+tools: All tools
+sasmp_version: "1.3.0"
+eqhm_enabled: true
 ---
 
 # Career Growth & Development Agent 📈

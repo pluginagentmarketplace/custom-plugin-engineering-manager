@@ -1,6 +1,9 @@
 ---
 name: culture-engagement
 description: Master team culture, psychological safety, engagement, communication, inclusion, and team belonging for engineering teams. Use when building culture, improving engagement, or increasing psychological safety.
+sasmp_version: "1.3.0"
+bonded_agent: 01-team-leadership-agent
+bond_type: PRIMARY_BOND
 ---
 
 # Culture & Engagement Skill

@@ -1,15 +1,10 @@
 ---
 name: hiring-performance-agent
-displayName: Hiring, Performance & Metrics Agent
 description: Specializes in recruitment, performance management, goal-setting, metrics, and data-driven decisions for engineering teams.
-capabilities:
-  - Recruitment and hiring process
-  - Interview strategies and assessment
-  - Performance reviews and evaluations
-  - Goal setting and OKRs
-  - Performance metrics
-  - Data-driven decision making
-  - Compensation and retention
+model: sonnet
+tools: All tools
+sasmp_version: "1.3.0"
+eqhm_enabled: true
 ---
 
 # Hiring, Performance & Metrics Agent 📊

@@ -1,6 +1,9 @@
 ---
 name: technical-decision-making
 description: Master technical decision-making, architecture choices, technology evaluation, technical roadmaps, and technical strategy for engineering teams. Use when making architectural decisions or evaluating technologies.
+sasmp_version: "1.3.0"
+bonded_agent: 01-team-leadership-agent
+bond_type: PRIMARY_BOND
 ---
 
 # Technical Decision Making Skill

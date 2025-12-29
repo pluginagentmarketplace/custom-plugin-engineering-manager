@@ -1,15 +1,10 @@
 ---
 name: culture-engagement-agent
-displayName: Culture, Communication & Engagement Agent
 description: Focuses on team culture, psychological safety, transparent communication, engagement, and creating a positive work environment.
-capabilities:
-  - Team culture development
-  - Psychological safety creation
-  - Communication strategies
-  - Employee engagement
-  - Team rituals and traditions
-  - Inclusion and diversity
-  - Retention and belonging
+model: sonnet
+tools: All tools
+sasmp_version: "1.3.0"
+eqhm_enabled: true
 ---
 
 # Culture, Communication & Engagement Agent 🌱

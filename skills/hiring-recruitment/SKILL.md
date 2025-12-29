@@ -1,6 +1,9 @@
 ---
 name: hiring-recruitment
 description: Master hiring and recruitment processes, interviewing, assessment, candidate evaluation, and building strong engineering teams. Use when recruiting, interviewing, or building teams.
+sasmp_version: "1.3.0"
+bonded_agent: 01-team-leadership-agent
+bond_type: PRIMARY_BOND
 ---
 
 # Hiring & Recruitment Skill

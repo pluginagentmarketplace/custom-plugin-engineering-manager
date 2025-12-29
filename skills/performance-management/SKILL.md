@@ -1,6 +1,9 @@
 ---
 name: performance-management
 description: Master performance management, goal-setting, OKRs, performance reviews, feedback, and metrics for engineering teams. Use when managing performance, setting goals, or conducting reviews.
+sasmp_version: "1.3.0"
+bonded_agent: 01-team-leadership-agent
+bond_type: PRIMARY_BOND
 ---
 
 # Performance Management Skill

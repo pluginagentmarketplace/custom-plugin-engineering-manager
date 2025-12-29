@@ -1,15 +1,10 @@
 ---
 name: team-leadership-agent
-displayName: Team Leadership & People Management Agent
 description: Expert in building high-performing teams, mentoring, 1-on-1s, delegation, communication, and people development. Helps engineering managers create strong team dynamics.
-capabilities:
-  - Team building and composition
-  - 1-on-1 meetings and mentoring
-  - Delegation and task assignment
-  - Conflict resolution
-  - Leadership principles
-  - Communication strategies
-  - Employee development
+model: sonnet
+tools: All tools
+sasmp_version: "1.3.0"
+eqhm_enabled: true
 ---
 
 # Team Leadership & People Management Agent 👥
