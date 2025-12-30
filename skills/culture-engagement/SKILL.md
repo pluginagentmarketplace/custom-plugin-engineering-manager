@@ -1,240 +1,478 @@
 ---
 name: culture-engagement
-description: Master team culture, psychological safety, engagement, communication, inclusion, and team belonging for engineering teams. Use when building culture, improving engagement, or increasing psychological safety.
+version: "2.0.0"
+description: Master team culture, psychological safety, engagement, communication, and inclusion for engineering teams
 sasmp_version: "1.3.0"
-bonded_agent: 01-team-leadership-agent
+bonded_agent: culture-engagement-agent
 bond_type: PRIMARY_BOND
+category: culture
+input_validation:
+  required_context: ["situation"]
+  optional_context: ["team_size", "remote_percentage"]
+retry_config:
+  max_attempts: 2
+  backoff: exponential
+observability:
+  log_level: info
+  metrics: [invocation_count, success_rate, latency]
 ---
 
 # Culture & Engagement Skill
 
-## Quick Start
+## Purpose
+Provide engineering managers with frameworks for building healthy team cultures, fostering psychological safety, driving engagement, and creating inclusive environments.
 
-Strong team culture is built through consistent practices, clear communication, and genuine care for team members.
+## Primary Bond
+**Agent**: culture-engagement-agent
+**Relationship**: This skill provides survey templates, ritual frameworks, and engagement tools that the agent uses.
 
-### Team Health Check-in Template
+---
 
-```markdown
-# Team Health Check-in
-Date: [Date]
-Team: [Team name]
+## Templates
 
-## Psychological Safety
-On a scale of 1-5:
-- I can speak up without fear: [Rating]
-- It's safe to admit mistakes: [Rating]
-- I can ask "dumb" questions: [Rating]
-- Team respects diverse viewpoints: [Rating]
+### Psychological Safety Pulse
 
-Average: [Score]
-Action if low: [Improvements needed]
+```yaml
+psychological_safety_pulse:
+  metadata:
+    team: "{Team name}"
+    date: "{Date}"
+    participants: "{X/Y responded}"
+    response_rate: "{X}%"
 
-## Engagement
-- Overall team engagement: [Rating]
-- People feel valued: [Rating]
-- Work feels meaningful: [Rating]
-- Growth opportunities clear: [Rating]
+  dimensions:
+    inclusion_safety:
+      questions:
+        - "I feel like I belong on this team"
+        - "My unique perspective is valued"
+        - "I can be myself at work"
+      average_score: null
+      trend: null
 
-Average: [Score]
-What's working: [...]
-What needs improvement: [...]
+    learner_safety:
+      questions:
+        - "It's safe to ask questions, even obvious ones"
+        - "Mistakes are treated as learning opportunities"
+        - "I can admit when I don't know something"
+      average_score: null
+      trend: null
 
-## Communication
-- Communication is transparent: [Rating]
-- Decisions are explained: [Rating]
-- Feedback is timely: [Rating]
-- Voices are heard: [Rating]
+    contributor_safety:
+      questions:
+        - "My contributions make a real difference"
+        - "I can use my skills effectively"
+        - "My work is valued by the team"
+      average_score: null
+      trend: null
 
-Improvements: [...]
+    challenger_safety:
+      questions:
+        - "I can challenge ideas without negative consequences"
+        - "Speaking up is encouraged, even with bad news"
+        - "Disagreement is handled constructively"
+      average_score: null
+      trend: null
 
-## Team Dynamics
-- Trust between teammates: [Rating]
-- Collaboration: [Rating]
-- Conflict addressed constructively: [Rating]
-- Support for struggling members: [Rating]
+  interpretation:
+    4.5_plus: "Excellent - maintain and reinforce"
+    4.0_to_4.4: "Good - minor improvements needed"
+    3.5_to_3.9: "Concerning - targeted intervention"
+    below_3.5: "Critical - immediate action needed"
 
-Observations: [...]
-
-## Action Items
-1. [Specific action]
-2. [Specific action]
-3. [Specific action]
-
-Follow-up date: [Date]
+  action_planning:
+    top_strength: ""
+    top_concern: ""
+    committed_actions: []
+    follow_up_date: ""
 ```
 
-### Team Rituals Planning Template
+### Engagement Survey
 
-```
-TEAM RITUALS & TRADITIONS
+```yaml
+engagement_survey:
+  metadata:
+    team: "{Team name}"
+    quarter: "{Q1 2025}"
+    response_rate: "{X}%"
 
-Daily Rituals
-- [Standup format]
-- Time: [Time]
-- Frequency: [Daily]
-- Participation: [All team members]
+  categories:
+    basic_needs:
+      - "I know what's expected of me"
+      - "I have the tools and resources to do my work"
 
-Weekly Rituals
-- [Team meeting]
-- [Retrospective or demo]
-- [Social connection]
+    individual:
+      - "I can do what I do best every day"
+      - "I receive recognition for good work"
+      - "Someone at work cares about me as a person"
+      - "Someone encourages my development"
 
-Monthly/Quarterly
-- [All-hands meeting]
-- [Team outing/celebration]
-- [Recognition event]
+    team:
+      - "My opinions seem to count"
+      - "The mission makes my work feel important"
+      - "My co-workers are committed to quality"
+      - "I have a best friend at work"
 
-Onboarding Ritual
-- [Welcome meeting]
-- [Team introduction]
-- [First week schedule]
+    growth:
+      - "I've had conversations about my progress"
+      - "I have opportunities to learn and grow"
 
-## Designing Rituals
-✓ Clear purpose
-✓ Regular schedule
-✓ Everyone can participate
-✓ Fun and meaningful
-✓ Evolves with team
-```
+  eNPS:
+    question: "How likely are you to recommend this team as a place to work?"
+    scale: "0-10"
+    calculation: "Promoters (9-10) - Detractors (0-6)"
+    target: ">40"
 
-## Core Concepts
+  interpretation:
+    engagement_score:
+      excellent: ">4.5"
+      good: "4.0-4.4"
+      needs_attention: "3.5-3.9"
+      critical: "<3.5"
 
-### Psychological Safety Building
-- **Leader vulnerability**: Share your own challenges
-- **Respond to failure constructively**: Learn, don't blame
-- **Encourage questions**: Create permission to ask
-- **Diverse perspectives**: Welcome different views
-- **Respectful conflict**: Disagree constructively
-
-### Engagement Drivers
-- Meaningful work
-- Autonomy and ownership
-- Clear growth path
-- Recognition and appreciation
-- Strong relationships
-- Work-life balance
-- Aligned values
-
-### Communication Principles
-- **Clarity**: Say what you mean
-- **Transparency**: Explain decisions
-- **Timeliness**: Communicate promptly
-- **Listening**: Active listening, seek understanding
-- **Consistency**: Regular updates
-- **Channels**: Right medium for message
-
-### Inclusion Practices
-- Diverse hiring
-- Inclusive meetings (no side conversations)
-- Equal voice for all
-- Fair processes
-- Celebrate differences
-- Address discrimination immediately
-
-## Tools & Templates
-
-### Engagement Survey Questions
-- I find my work meaningful
-- I have opportunities to grow
-- My manager cares about me
-- I feel like I belong
-- The team collaborates well
-- I would recommend this as a place to work
-- I feel included and valued
-
-### Team Culture Assessment
-```
-VALUES              | DEMONSTRATED | ACTION
-─────────────────────────────────────
-Excellence         | ★★★☆        | [Action]
-Collaboration      | ★★★★        | [Maintain]
-Innovation         | ★★☆☆        | [Action]
-Transparency       | ★★★☆        | [Action]
-Inclusion          | ★★★★        | [Maintain]
+    eNPS:
+      excellent: ">50"
+      good: "30-50"
+      needs_attention: "0-30"
+      critical: "<0"
 ```
 
-### Communication Cadence
-- Daily: Standups
-- Weekly: Team sync, 1-on-1s
-- Bi-weekly: Team retrospective
-- Monthly: All-hands, recognition
-- Quarterly: Offsite, strategy share
-- Annually: Planning, celebrations
+### Team Culture Canvas
 
-## Common Challenges
+```yaml
+team_culture_canvas:
+  values:
+    - name: "{Value 1 - e.g., Ownership}"
+      definition: "{What it means to us}"
+      behaviors:
+        do:
+          - "{Observable behavior we encourage}"
+          - "{Another behavior}"
+        dont:
+          - "{Behavior that violates this value}"
 
-**Challenge: Toxic behaviors**
-→ Address immediately
-→ Clear expectations
-→ Consequences if continues
-→ Support team healing
+    - name: "{Value 2 - e.g., Transparency}"
+      definition: ""
+      behaviors:
+        do: []
+        dont: []
 
-**Challenge: Silent team**
-→ Create safety to speak
-→ Invite input explicitly
-→ Ask follow-up questions
-→ Model vulnerability
+  norms:
+    communication:
+      - "Default to async, sync when needed"
+      - "Respond within 4 hours during work hours"
+      - "Use public channels unless confidential"
 
-**Challenge: High turnover**
-→ Exit interviews to understand why
-→ Address root causes
-→ Improve compensation/benefits
-→ Strengthen culture
+    meetings:
+      - "Agenda required for all meetings"
+      - "Start and end on time"
+      - "Notes shared within 24 hours"
+      - "Camera on for video calls (optional for listeners)"
 
-**Challenge: Remote team engagement**
-→ Intentional connection building
-→ Video-first meetings
-→ Regular 1-on-1s
-→ Virtual team rituals
-→ Inclusive participation
+    feedback:
+      - "Direct and kind"
+      - "Timely (within 48 hours)"
+      - "In private for constructive"
+      - "In public for praise"
 
-## Best Practices
+    work_life:
+      - "No messages after 6pm local time"
+      - "Vacation is vacation"
+      - "Core hours: 10am-4pm local"
 
-**Psychological Safety**
-- Share your own mistakes
-- Ask questions in meetings
-- Say "I don't know"
-- Acknowledge good questions
-- Learn from failures
-- Diverse viewpoints welcome
+  rituals:
+    daily:
+      - name: "Standup"
+        time: "{Time}"
+        format: "{Async/Sync}"
+        purpose: "Alignment and blockers"
 
-**Recognition**
-- Specific, timely praise
-- Public recognition appropriate
-- Private feedback for growth
-- Peer recognition
-- Celebrate wins together
+    weekly:
+      - name: "Team sync"
+        time: "{Day/Time}"
+        duration: "30 min"
+        purpose: "Strategic alignment"
 
-**Communication**
-- Overcommunicate (especially remote)
-- Multiple channels
-- Repeat key messages
-- Listen more than you talk
-- Be transparent about trade-offs
+      - name: "Social time"
+        time: "{Day/Time}"
+        duration: "30 min"
+        purpose: "Connection"
 
-**Inclusion**
-- Ask for and act on feedback
-- Diverse interview panels
-- Inclusive language
-- Equal opportunities
-- Safe space for all
+    monthly:
+      - name: "All-hands"
+        purpose: "Company updates"
+
+      - name: "Recognition"
+        purpose: "Celebrate wins"
+
+    quarterly:
+      - name: "Retrospective"
+        purpose: "Continuous improvement"
+
+      - name: "Planning"
+        purpose: "Align on goals"
+```
+
+### Stay Interview Guide
+
+```yaml
+stay_interview:
+  purpose: "Understand what keeps people engaged and identify retention risks"
+  frequency: "Quarterly for all, monthly for high-risk"
+
+  questions:
+    engagement:
+      - "What keeps you here?"
+      - "What do you look forward to when you come to work?"
+      - "When was the last time you thought about leaving?"
+
+    concerns:
+      - "What might tempt you to leave?"
+      - "What frustrates you most about working here?"
+      - "What would you change if you could?"
+
+    value:
+      - "Do you feel valued? Why or why not?"
+      - "Is your work recognized appropriately?"
+      - "Do you feel you're paid fairly?"
+
+    growth:
+      - "Do you see a future for yourself here?"
+      - "What skills would you like to develop?"
+      - "Is your career progressing as you'd like?"
+
+    manager:
+      - "How can I better support you?"
+      - "Is there feedback you haven't shared?"
+      - "What do you need from me?"
+
+  action_planning:
+    immediate_actions: []
+    longer_term_changes: []
+    follow_up_date: ""
+    commitment_made: ""
+```
+
+---
+
+## Decision Trees
+
+### Psychological Safety Intervention
+
+```
+Safety score below 4.0
+|
++-- Which dimension is lowest?
+|   |
+|   +-- Inclusion Safety
+|   |   +-- New team members struggling?
+|   |   +-- Cliques forming?
+|   |   +-- Action: Intentional inclusion activities
+|   |
+|   +-- Learner Safety
+|   |   +-- Questions being mocked?
+|   |   +-- Mistakes punished?
+|   |   +-- Action: Leader vulnerability modeling
+|   |
+|   +-- Contributor Safety
+|   |   +-- Ideas ignored?
+|   |   +-- Credit not given?
+|   |   +-- Action: Recognition program
+|   |
+|   +-- Challenger Safety
+|       +-- Bad news hidden?
+|       +-- Dissent suppressed?
+|       +-- Action: Explicitly invite challenge
+|
++-- Is there a specific incident?
+|   +-- Yes -> Address directly with individuals
+|   +-- No -> Continue
+|
++-- Team-wide issue or specific individuals?
+    +-- Team-wide -> Team retrospective, new norms
+    +-- Specific -> 1-on-1 coaching, potential consequences
+```
+
+### Retention Risk Response
+
+```
+Retention risk identified
+|
++-- Risk level?
+|   +-- High (actively interviewing) -> Immediate action
+|   +-- Medium (frustrated but not leaving) -> Prioritize
+|   +-- Low (minor concerns) -> Address in normal cadence
+|
++-- Root cause?
+|   +-- Compensation -> Market review, adjustment if warranted
+|   +-- Growth -> IDP, stretch assignments, promotion path
+|   +-- Manager -> Coaching, potentially reassign
+|   +-- Culture -> Team intervention, behavior changes
+|   +-- Work itself -> Role adjustment, project changes
+|
++-- Is this person critical to retain?
+|   +-- Yes -> Escalate, consider exceptions
+|   +-- No -> Standard support, don't over-invest
+|
++-- Can we address the root cause?
+    +-- Yes -> Create action plan, timeline
+    +-- No -> Be honest, help them succeed elsewhere
+```
+
+---
+
+## Anti-Patterns
+
+```yaml
+anti_patterns:
+  culture_theater:
+    symptom: "Values on the wall but not in actions"
+    remedy:
+      - "Define observable behaviors for each value"
+      - "Call out violations (kindly but firmly)"
+      - "Celebrate values in action"
+
+  survey_fatigue:
+    symptom: "Low response rates, cynicism about surveys"
+    remedy:
+      - "Reduce frequency, increase impact"
+      - "Share results and actions publicly"
+      - "Close the loop on previous feedback"
+
+  brilliant_jerk:
+    symptom: "High performer with toxic behavior tolerated"
+    remedy:
+      - "Behavior is a performance dimension"
+      - "Address immediately, no exceptions"
+      - "Impact on team is measurable"
+
+  forced_fun:
+    symptom: "Mandatory team building that people dread"
+    remedy:
+      - "Make social activities optional"
+      - "Offer variety (not everyone likes happy hours)"
+      - "Focus on genuine connection"
+```
+
+---
+
+## Quick Reference Cards
+
+### Recognition Best Practices
+
+```yaml
+recognition:
+  public:
+    format: "I want to recognize {name} for {specific action}.
+             This demonstrated our value of {value}
+             and resulted in {impact}."
+    when: "Weekly in team channel or meeting"
+
+  private:
+    format: "I noticed you {specific action}.
+             This showed great {skill/value}
+             and made a real difference in {outcome}."
+    when: "As it happens, within 48 hours"
+
+  peer:
+    format: "Shoutout to {name} for helping me with {task}.
+             Really appreciated your {specific contribution}."
+    when: "Encourage regularly, model it yourself"
+
+  guidelines:
+    - "Be specific (not just 'great job')"
+    - "Be timely (within 48 hours)"
+    - "Tie to values when possible"
+    - "Balance public and private"
+    - "Recognize effort, not just outcomes"
+```
+
+### Meeting Inclusion Checklist
+
+```yaml
+meeting_inclusion:
+  before:
+    - "Is everyone who should be there invited?"
+    - "Is the time zone fair for all participants?"
+    - "Is the agenda shared in advance?"
+
+  during:
+    - "Are all voices heard (not just the loudest)?"
+    - "Are there multiple ways to participate (verbal, chat)?"
+    - "Are we avoiding side conversations?"
+    - "Are we crediting ideas to originators?"
+
+  after:
+    - "Are notes shared with all stakeholders?"
+    - "Are action items clear and assigned?"
+    - "Is there a way to give feedback on the meeting?"
+```
+
+### Remote/Hybrid Best Practices
+
+```yaml
+remote_practices:
+  connection:
+    - "Camera on as default (but respect opt-out)"
+    - "Virtual coffee chats scheduled"
+    - "Team rituals adapted for remote"
+
+  communication:
+    - "Over-communicate (2x what feels necessary)"
+    - "Write things down (tribal knowledge shared)"
+    - "Async-first, sync when needed"
+
+  inclusion:
+    - "Same experience for remote and in-office"
+    - "No hallway decisions (document everything)"
+    - "Time zone rotation for recurring meetings"
+```
+
+---
+
+## Troubleshooting
+
+| Problem | Root Cause | Solution |
+|---------|-----------|----------|
+| Silent meetings | Low psychological safety | Invite input explicitly, wait for answers |
+| Survey scores low | Real problems or survey fatigue | Act on feedback, show progress |
+| High turnover | Multiple possible causes | Exit interviews, stay conversations |
+| Cliques forming | Natural but needs management | Mix up teams, cross-functional projects |
+
+---
+
+## Validation Rules
+
+```yaml
+input_validation:
+  situation:
+    type: string
+    min_length: 10
+    required: true
+
+  team_size:
+    type: integer
+    min: 1
+    max: 100
+    required: false
+
+  remote_percentage:
+    type: integer
+    min: 0
+    max: 100
+    required: false
+```
+
+---
 
 ## Resources
 
-- "Psychological Safety" - Amy C. Edmondson
-- "Culture Code" - Daniel Coyle
-- "The Five Dysfunctions of a Team" - Patrick Lencioni
-- "Radical Candor" - Kim Scott
-- Team culture and engagement surveys
+**Books**:
+- The Fearless Organization - Amy Edmondson
+- Culture Code - Daniel Coyle
+- Radical Candor - Kim Scott
+- No Rules Rules - Reed Hastings
 
-## When to Use This Skill
-
-- Building team culture
-- Creating psychological safety
-- Improving engagement
-- Addressing team conflicts
-- Team rituals and traditions
-- Communication improvement
-- Inclusion and diversity
-- Retention and belonging
-- Remote team engagement
+**Research**:
+- Google's Project Aristotle
+- Gallup Q12 engagement research
+- Amy Edmondson's psychological safety research
