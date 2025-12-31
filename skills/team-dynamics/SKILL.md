@@ -3,7 +3,7 @@ name: team-dynamics
 version: "2.0.0"
 description: Master team dynamics, leadership principles, delegation, 1-on-1s, mentoring, and people management for engineering managers
 sasmp_version: "1.3.0"
-bonded_agent: team-leadership-agent
+bonded_agent: 01-team-leadership-agent
 bond_type: PRIMARY_BOND
 category: people-management
 input_validation:

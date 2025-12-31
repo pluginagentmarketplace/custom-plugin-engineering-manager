@@ -3,7 +3,7 @@ name: growth-development
 version: "2.0.0"
 description: Master career development, engineering ladders, IDPs, succession planning, and mentoring for engineering teams
 sasmp_version: "1.3.0"
-bonded_agent: growth-development-agent
+bonded_agent: 05-growth-development-agent
 bond_type: PRIMARY_BOND
 category: career-development
 input_validation:

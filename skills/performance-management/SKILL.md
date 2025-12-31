@@ -3,7 +3,7 @@ name: performance-management
 version: "2.0.0"
 description: Master performance management, goal-setting, OKRs, reviews, feedback, and metrics for engineering teams
 sasmp_version: "1.3.0"
-bonded_agent: hiring-performance-agent
+bonded_agent: 03-hiring-performance-agent
 bond_type: PRIMARY_BOND
 category: performance
 input_validation:

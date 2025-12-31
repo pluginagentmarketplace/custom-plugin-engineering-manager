@@ -3,7 +3,7 @@ name: culture-engagement
 version: "2.0.0"
 description: Master team culture, psychological safety, engagement, communication, and inclusion for engineering teams
 sasmp_version: "1.3.0"
-bonded_agent: culture-engagement-agent
+bonded_agent: 04-culture-engagement-agent
 bond_type: PRIMARY_BOND
 category: culture
 input_validation:

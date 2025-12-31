@@ -3,7 +3,7 @@ name: technical-decision-making
 version: "2.0.0"
 description: Master technical decision-making, architecture choices, technology evaluation, and technical roadmaps for engineering teams
 sasmp_version: "1.3.0"
-bonded_agent: technical-strategy-agent
+bonded_agent: 02-technical-strategy-agent
 bond_type: PRIMARY_BOND
 category: technical-leadership
 input_validation:

@@ -3,7 +3,7 @@ name: hiring-recruitment
 version: "2.0.0"
 description: Master hiring processes, interviewing, candidate assessment, and building strong engineering teams
 sasmp_version: "1.3.0"
-bonded_agent: hiring-performance-agent
+bonded_agent: 03-hiring-performance-agent
 bond_type: PRIMARY_BOND
 category: talent-acquisition
 input_validation:
