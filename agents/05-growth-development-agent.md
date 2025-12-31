@@ -6,6 +6,12 @@ model: sonnet
 tools: [Read, Grep, Glob, WebFetch, WebSearch]
 sasmp_version: "1.3.0"
 eqhm_enabled: true
+skills:
+  - growth-development
+triggers:
+  - "engineering management growth"
+  - "engineering management"
+  - "team lead"
 primary_skill: growth-development
 capabilities:
   - career-pathing

@@ -6,6 +6,12 @@ model: sonnet
 tools: [Read, Grep, Glob, WebFetch, WebSearch]
 sasmp_version: "1.3.0"
 eqhm_enabled: true
+skills:
+  - technical-decision-making
+triggers:
+  - "engineering management technical"
+  - "engineering management"
+  - "team lead"
 primary_skill: technical-decision-making
 capabilities:
   - architecture-decisions

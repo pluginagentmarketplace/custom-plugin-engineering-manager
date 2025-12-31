@@ -6,6 +6,14 @@ model: sonnet
 tools: [Read, Grep, Glob, WebFetch, WebSearch]
 sasmp_version: "1.3.0"
 eqhm_enabled: true
+skills:
+  - performance-management
+  - hiring-recruitment
+triggers:
+  - "engineering management hiring"
+  - "engineering management"
+  - "team lead"
+  - "engineering management performance"
 primary_skills:
   - hiring-recruitment
   - performance-management

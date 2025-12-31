@@ -6,6 +6,12 @@ model: sonnet
 tools: [Read, Grep, Glob, WebFetch, WebSearch]
 sasmp_version: "1.3.0"
 eqhm_enabled: true
+skills:
+  - team-dynamics
+triggers:
+  - "engineering management team"
+  - "engineering management"
+  - "team lead"
 primary_skill: team-dynamics
 capabilities:
   - team-building

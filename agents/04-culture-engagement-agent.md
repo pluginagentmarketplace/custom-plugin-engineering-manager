@@ -6,6 +6,12 @@ model: sonnet
 tools: [Read, Grep, Glob, WebFetch, WebSearch]
 sasmp_version: "1.3.0"
 eqhm_enabled: true
+skills:
+  - culture-engagement
+triggers:
+  - "engineering management culture"
+  - "engineering management"
+  - "team lead"
 primary_skill: culture-engagement
 capabilities:
   - culture-building
