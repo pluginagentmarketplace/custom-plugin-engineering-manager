@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- Animated Typing Banner -->
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=2E9EF7&center=true&vCenter=true&multiline=true&repeat=true&width=600&height=100&lines=Engineering+Manager+Assistant;5+Agents+%7C+5+Skills;Claude+Code+Plugin" alt="Engineering Manager Assistant" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=2E9EF7&center=true&vCenter=true&multiline=true&repeat=true&width=600&height=100&lines=Engineering+Manager+Assistant;5+Agents+%7C+6+Skills;Claude+Code+Plugin" alt="Engineering Manager Assistant" />
 
 <br/>
 
@@ -13,7 +13,7 @@
 
 <!-- Badge Row 2: Content Badges -->
 [![Agents](https://img.shields.io/badge/Agents-5-orange?style=flat-square&logo=robot)](#-agents)
-[![Skills](https://img.shields.io/badge/Skills-5-purple?style=flat-square&logo=lightning)](#-skills)
+[![Skills](https://img.shields.io/badge/Skills-6-purple?style=flat-square&logo=lightning)](#-skills)
 [![Commands](https://img.shields.io/badge/Commands-4-green?style=flat-square&logo=terminal)](#-commands)
 
 <br/>
@@ -25,7 +25,7 @@
 
 ### What is this?
 
-> **Engineering Manager Assistant** is a Claude Code plugin with **5 agents** and **5 skills** for engineering manager development.
+> **Engineering Manager Assistant** is a Claude Code plugin with **5 agents** and **6 skills** for engineering manager development.
 
 </div>
 
@@ -109,7 +109,7 @@ engineering-manager-assistant:03-hiring-performance-agent
 | Feature | Description |
 |---------|-------------|
 | 🤖 **5 Agents** | Specialized AI agents for engineering manager tasks |
-| 🛠️ **5 Skills** | Reusable capabilities with Golden Format |
+| 🛠️ **6 Skills** | Reusable capabilities with Golden Format |
 | ⌨️ **4 Commands** | Quick slash commands |
 | 🔄 **SASMP v1.3.0** | Full protocol compliance |
 
@@ -175,7 +175,7 @@ custom-plugin-engineering-manager/
 │   ├── plugin.json
 │   └── marketplace.json
 ├── 📁 agents/              # 5 agents
-├── 📁 skills/              # 5 skills (Golden Format)
+├── 📁 skills/              # 6 skills (Golden Format)
 ├── 📁 commands/            # 4 commands
 ├── 📁 hooks/
 ├── 📄 README.md
@@ -196,7 +196,7 @@ custom-plugin-engineering-manager/
 | **Status** | Production Ready |
 | **SASMP** | v1.3.0 |
 | **Agents** | 5 |
-| **Skills** | 5 |
+| **Skills** | 6 |
 | **Commands** | 4 |
 
 ---
