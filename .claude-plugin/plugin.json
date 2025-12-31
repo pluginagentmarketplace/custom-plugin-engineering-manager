@@ -22,7 +22,7 @@
       "name": "team-leadership-agent",
       "displayName": "Team Leadership & People Management",
       "description": "Expert in building high-performing teams, mentoring, 1-on-1s, delegation, communication, and people development",
-      "file": "agents/01-team-leadership-agent.md",
+      "file": "./agents/01-team-leadership-agent.md",
       "primary_skill": "team-dynamics",
       "model": "sonnet",
       "capabilities": ["team-building", "mentoring", "delegation", "conflict-resolution", "psychological-safety"]
@@ -31,7 +31,7 @@
       "name": "technical-strategy-agent",
       "displayName": "Technical Strategy & Architecture",
       "description": "Guides technical direction, architecture decisions, technology roadmaps, technical excellence, and strategic technology choices",
-      "file": "agents/02-technical-strategy-agent.md",
+      "file": "./agents/02-technical-strategy-agent.md",
       "primary_skill": "technical-decision-making",
       "model": "sonnet",
       "capabilities": ["architecture-decisions", "tech-evaluation", "technical-debt", "roadmap-planning", "system-design"]
@@ -40,7 +40,7 @@
       "name": "hiring-performance-agent",
       "displayName": "Hiring, Performance & Metrics",
       "description": "Specializes in recruitment, performance management, goal-setting, OKRs, metrics, and data-driven decisions",
-      "file": "agents/03-hiring-performance-agent.md",
+      "file": "./agents/03-hiring-performance-agent.md",
       "primary_skills": ["hiring-recruitment", "performance-management"],
       "model": "sonnet",
       "capabilities": ["interviewing", "performance-reviews", "okr-planning", "metrics", "compensation"]
@@ -49,7 +49,7 @@
       "name": "culture-engagement-agent",
       "displayName": "Culture, Communication & Engagement",
       "description": "Focuses on team culture, psychological safety, transparent communication, engagement, and creating a positive work environment",
-      "file": "agents/04-culture-engagement-agent.md",
+      "file": "./agents/04-culture-engagement-agent.md",
       "primary_skill": "culture-engagement",
       "model": "sonnet",
       "capabilities": ["culture-building", "psychological-safety", "engagement", "inclusion", "retention"]
@@ -58,7 +58,7 @@
       "name": "growth-development-agent",
       "displayName": "Career Growth & Development",
       "description": "Supports career paths, skill development, succession planning, team advancement, and long-term career growth",
-      "file": "agents/05-growth-development-agent.md",
+      "file": "./agents/05-growth-development-agent.md",
       "primary_skill": "growth-development",
       "model": "sonnet",
       "capabilities": ["career-paths", "idp", "succession-planning", "mentorship", "promotions"]
@@ -71,7 +71,7 @@
       "category": "people-management",
       "description": "Master team dynamics, leadership principles, delegation, 1-on-1s, mentoring, and people management",
       "bonded_agent": "team-leadership-agent",
-      "file": "skills/team-dynamics/SKILL.md"
+      "file": "./skills/team-dynamics/SKILL.md"
     },
     {
       "name": "technical-decision-making",
@@ -79,7 +79,7 @@
       "category": "technical-leadership",
       "description": "Master technical decision-making, architecture choices, technology evaluation, and technical roadmaps",
       "bonded_agent": "technical-strategy-agent",
-      "file": "skills/technical-decision-making/SKILL.md"
+      "file": "./skills/technical-decision-making/SKILL.md"
     },
     {
       "name": "hiring-recruitment",
@@ -87,7 +87,7 @@
       "category": "talent-acquisition",
       "description": "Master hiring processes, interviewing, candidate assessment, and building strong engineering teams",
       "bonded_agent": "hiring-performance-agent",
-      "file": "skills/hiring-recruitment/SKILL.md"
+      "file": "./skills/hiring-recruitment/SKILL.md"
     },
     {
       "name": "performance-management",
@@ -95,7 +95,7 @@
       "category": "performance",
       "description": "Master performance management, goal-setting, OKRs, reviews, feedback, and metrics",
       "bonded_agent": "hiring-performance-agent",
-      "file": "skills/performance-management/SKILL.md"
+      "file": "./skills/performance-management/SKILL.md"
     },
     {
       "name": "culture-engagement",
@@ -103,7 +103,7 @@
       "category": "culture",
       "description": "Master team culture, psychological safety, engagement, communication, and inclusion",
       "bonded_agent": "culture-engagement-agent",
-      "file": "skills/culture-engagement/SKILL.md"
+      "file": "./skills/culture-engagement/SKILL.md"
     },
     {
       "name": "growth-development",
@@ -111,7 +111,7 @@
       "category": "career",
       "description": "Master career paths, skill development, succession planning, IDPs, and professional growth",
       "bonded_agent": "growth-development-agent",
-      "file": "skills/growth-development/SKILL.md"
+      "file": "./skills/growth-development/SKILL.md"
     }
   ],
   "commands": [
@@ -119,25 +119,25 @@
       "name": "manage",
       "displayName": "Management Toolkit",
       "description": "Access comprehensive management tools, templates, frameworks, and best practices",
-      "file": "commands/manage.md"
+      "file": "./commands/manage.md"
     },
     {
       "name": "strategies",
       "displayName": "Strategic Planning & Vision",
       "description": "Plan technical strategies, organizational roadmaps, and strategic initiatives",
-      "file": "commands/strategies.md"
+      "file": "./commands/strategies.md"
     },
     {
       "name": "assess-team",
       "displayName": "Team Assessment & Health Check",
       "description": "Evaluate team health, dynamics, performance, engagement with actionable recommendations",
-      "file": "commands/assess-team.md"
+      "file": "./commands/assess-team.md"
     },
     {
       "name": "guide",
       "displayName": "Get Expert Guidance",
       "description": "Get expert advice on specific management challenges, situations, and decisions",
-      "file": "commands/guide.md"
+      "file": "./commands/guide.md"
     }
   ],
   "hooks": {
