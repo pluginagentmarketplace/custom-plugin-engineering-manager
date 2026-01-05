@@ -63,7 +63,7 @@
 
 ```bash
 # Step 1️⃣ Add the marketplace
-/plugin add marketplace pluginagentmarketplace/custom-plugin-engineering-manager
+/plugin marketplace add pluginagentmarketplace/custom-plugin-engineering-manager
 
 # Step 2️⃣ Install the plugin
 /plugin install engineering-manager-assistant@pluginagentmarketplace-engineering-manager

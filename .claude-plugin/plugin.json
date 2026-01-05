@@ -25,7 +25,13 @@
       "file": "./agents/01-team-leadership-agent.md",
       "primary_skill": "team-dynamics",
       "model": "sonnet",
-      "capabilities": ["team-building", "mentoring", "delegation", "conflict-resolution", "psychological-safety"]
+      "capabilities": [
+        "team-building",
+        "mentoring",
+        "delegation",
+        "conflict-resolution",
+        "psychological-safety"
+      ]
     },
     {
       "name": "technical-strategy-agent",
@@ -34,16 +40,31 @@
       "file": "./agents/02-technical-strategy-agent.md",
       "primary_skill": "technical-decision-making",
       "model": "sonnet",
-      "capabilities": ["architecture-decisions", "tech-evaluation", "technical-debt", "roadmap-planning", "system-design"]
+      "capabilities": [
+        "architecture-decisions",
+        "tech-evaluation",
+        "technical-debt",
+        "roadmap-planning",
+        "system-design"
+      ]
     },
     {
       "name": "hiring-performance-agent",
       "displayName": "Hiring, Performance & Metrics",
       "description": "Specializes in recruitment, performance management, goal-setting, OKRs, metrics, and data-driven decisions",
       "file": "./agents/03-hiring-performance-agent.md",
-      "primary_skills": ["hiring-recruitment", "performance-management"],
+      "primary_skills": [
+        "hiring-recruitment",
+        "performance-management"
+      ],
       "model": "sonnet",
-      "capabilities": ["interviewing", "performance-reviews", "okr-planning", "metrics", "compensation"]
+      "capabilities": [
+        "interviewing",
+        "performance-reviews",
+        "okr-planning",
+        "metrics",
+        "compensation"
+      ]
     },
     {
       "name": "culture-engagement-agent",
@@ -52,7 +73,13 @@
       "file": "./agents/04-culture-engagement-agent.md",
       "primary_skill": "culture-engagement",
       "model": "sonnet",
-      "capabilities": ["culture-building", "psychological-safety", "engagement", "inclusion", "retention"]
+      "capabilities": [
+        "culture-building",
+        "psychological-safety",
+        "engagement",
+        "inclusion",
+        "retention"
+      ]
     },
     {
       "name": "growth-development-agent",
@@ -61,7 +88,13 @@
       "file": "./agents/05-growth-development-agent.md",
       "primary_skill": "growth-development",
       "model": "sonnet",
-      "capabilities": ["career-paths", "idp", "succession-planning", "mentorship", "promotions"]
+      "capabilities": [
+        "career-paths",
+        "idp",
+        "succession-planning",
+        "mentorship",
+        "promotions"
+      ]
     }
   ],
   "skills": [
@@ -140,10 +173,6 @@
       "file": "./commands/guide.md"
     }
   ],
-  "hooks": {
-    "enabled": true,
-    "location": "hooks/hooks.json"
-  },
   "settings": {
     "observability": true,
     "structured_output": true,
