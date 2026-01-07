@@ -4,7 +4,6 @@
   "description": "Production-grade engineering management plugin with specialized agents for team leadership, technical strategy, hiring, performance, culture, and career development",
   "author": "Claude Code",
   "repository": "https://github.com/pluginagentmarketplace/custom-plugin-engineering-manager",
-  "sasmp_version": "1.3.0",
   "keywords": [
     "engineering-management",
     "team-leadership",
@@ -178,11 +177,6 @@
     "structured_output": true,
     "error_handling": "graceful",
     "token_optimization": true
-  },
-  "integrity": {
-    "agent_skill_bonds": "validated",
-    "orphan_check": "enabled",
-    "circular_dependency_check": "enabled"
   },
   "license": "SEE LICENSE IN LICENSE"
 }
